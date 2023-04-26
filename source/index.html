@@ -1,12 +1,145 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedona</title>
+</head>
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="#">
+      <img src="img/logo.png" alt="Город Седона">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-navigation__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a>
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            HTML ACADEMY
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+  <main class="main-container">
 
-  </body>
+    <section class="main-banner">
+      <h1 class="visually-hidden">Город Седона</h1>
+      <img src="img/sedona.svg" alt="Sedona">
+    </section>
+
+    <section class="info-block">
+      <h2 class="info-block__header">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p class="info-block__cover">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    </section>
+
+    <section class="card">
+      <h2 class="visually-hidden">Первая причина</h2>
+      <div class="card__reason card__reason--primary">
+        <strong class="card__text-header">Настоящий городок</strong>
+        <p class="card__number-reason">№1</p>
+        <p class="card__text-description">Седона не атракцион для туристов, там течет своя жизнь</p>
+      </div>
+      <img class="card__image" src="img/photo-city-tablet.jpg" alt="Настоящий городок">
+    </section>
+
+    <section class="card">
+      <h2 class="visually-hidden">Предоставляемые условия</h2>
+      <ul class="card-condition">
+        <li class="card-condition__item">
+          <strong class="card-condition__text-header">Жилье</strong>
+          <p class="card-condition__text-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </li>
+        <li class="card-condition__item">
+          <strong class="card-condition__text-header">Еда</strong>
+          <p class="card-condition__text-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+        <li class="card-condition__item">
+          <strong class="card-condition__text-header">Сувениры</strong>
+          <p class="card-condition__text-description">Не только китайского, но и местного производства!</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2 class="visually-hidden">Вторая причина</h2>
+      <img class="card__image" src="img/photo-bridge-tablet.jpg" alt="Мост дьявола">
+      <div class="card__reason card__reason--primary">
+        <strong class="card__text-header">Там есть мост дьявола</strong>
+        <p class="card__number-reason">№2</p>
+        <p class="card__text-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="visually-hidden">Третья, четвертая и пятая причины</h2>
+      <div class="card__reason card__reason--secondary">
+        <strong class="card__text-header">Небольшая площадь</strong>
+        <p class="card__number-reason">№3</p>
+        <p class="card__text-description">Все интересные места находятся очень близко</p>
+      </div>
+      <div class="card__reason card__reason--secondary">
+        <strong class="card__text-header">Красивая дорога</strong>
+        <p class="card__number-reason">№4</p>
+        <p class="card__text-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
+      <div class="card__reason card__reason--secondary">
+        <strong class="card__text-header">Мало туристов</strong>
+        <p class="card__number-reason">№5</p>
+        <p class="card__text-description">Большинство едет в Гранд Каньон и толпится там</p>
+      </div>
+    </section>
+
+    <section class="info-block">
+      <h2 class="info-block__header">Заинтересовались?</h2>
+      <p class="info-block__cover">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне</p>
+      <button class="info-block__button-search" type="button">Найти гостиницу</button>
+    </section>
+
+    <section class="card">
+      <h2 class="visually-hidden">Карта местоположения</h2>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__logo">
+      <img src="img/visitsedona.svg" alt="VISITSEDONA">
+    </div>
+    <ul class="main-footer__social social-list">
+      <li class="social-list__item">
+        <span class="visually-hidden">Вконтакте</span>
+      </li>
+      <li class="social-list__item">
+        <span class="visually-hidden">Telegram</span>
+      </li>
+      <li class="social-list__item">
+        <span class="visually-hidden">YouTube</span>
+      </li>
+    </ul>
+    <div class="main-footer__copyright">
+      <span>Разработано</span>
+    </div>
+  </footer>
+
+</body>
 </html>
