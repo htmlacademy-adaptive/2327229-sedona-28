@@ -2,6 +2,7 @@
 @import "./blocks/main-navigation.less";
 @import "./blocks/site-list.less";
 @import "./blocks/main-banner.less";
+@import "./blocks/info-block.less";
 
 @font-face {
   font-family: "PT-Sans";
@@ -19,6 +20,8 @@
   font-display: swap;
 }
 
+@main-font: "PT-Sans", "Arial", sans-serif;
+
 body {
   margin: 0;
   padding: 0;
@@ -35,3 +38,20 @@ body {
   overflow: hidden;
 }
 
+.font-header {
+  font-family: @main-font;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.font-paragraph {
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
