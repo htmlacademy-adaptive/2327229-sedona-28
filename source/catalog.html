@@ -4,35 +4,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Фото и видео</title>
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img src="img/logo.png" alt="Город Седона">
-    </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-navigation__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a href="index.html">
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">
             Главная
           </a>
         </li>
         <li class="site-list__item">
-          <a>
+          <a class="site-list__link site-list__link--active">
             Фото и видео
           </a>
         </li>
+        <li class="site-list__item site-list__item--logo">
+          <a class="main-header__logo" href="index.html">
+            <img src="img/logo.svg" alt="Город Седона">
+          </a>
+        </li>
         <li class="site-list__item">
-          <a href="form.html">
+          <a class="site-list__link" href="form.html">
             Форма отзыва
           </a>
         </li>
         <li class="site-list__item">
-          <a href="#">
+          <a class="site-list__link" href="#">
             HTML ACADEMY
           </a>
         </li>
@@ -43,7 +46,7 @@
   <main class="main-container">
     <section class="main-banner">
       <h1 class="visually-hidden">Город Седона</h1>
-      <img src="img/sedona.svg" alt="Sedona">
+      <img class="main-banner__title" src="img/sedona.svg" alt="Sedona">
     </section>
 
     <section class="info-block">
