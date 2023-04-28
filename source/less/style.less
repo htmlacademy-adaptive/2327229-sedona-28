@@ -3,6 +3,13 @@
 @import "./blocks/site-list.less";
 @import "./blocks/main-banner.less";
 @import "./blocks/info-block.less";
+@import "./blocks/card.less";
+@import "./blocks/card-condition.less";
+@import "./blocks/map.less";
+@import "./blocks/main-footer.less";
+@import "./blocks/social-list.less";
+@import "./blocks/videopresentation.less";
+@import "./blocks/photo-list.less";
 
 @font-face {
   font-family: "PT-Sans";
@@ -21,10 +28,23 @@
 }
 
 @main-font: "PT-Sans", "Arial", sans-serif;
+@background-block-color: #81B3D2;
+@font-color-secondary: #FFFFFF;
+
+html {
+  height: 100%;
+}
 
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .visually-hidden {
