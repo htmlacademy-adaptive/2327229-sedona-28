@@ -50,49 +50,61 @@
     </section>
 
     <section class="info-block">
-      <h2 class="info-block__header">Оставьте свой отзыв</h2>
-      <p class="info-block__cover">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <div class="info-block__wrapper info-block__wrapper--review">
+        <h2 class="info-block__header info-block__header--big font-header">Оставьте свой отзыв</h2>
+        <p class="info-block__cover font-paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, <nobr>а также</nobr> о посещенных вами достопримечательностях</p>
+      </div>
     </section>
 
     <section class="main-form">
       <h2 class="visually-hidden">Форма отзыва</h2>
       <form class="form-revocation" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form-block">
-          <legend class="form-block__legend">Представьтесь:</legend>
-          <label class="form-block__field-name form-field" for="name">
-            <span class="form-field__label">Имя*:</span>
-            <input class="form-block__input" type="text" name="name" placeholder="Введите ваше имя">
-          </label>
-          <label class="form-block__field-name" for="last-name">
-            <span class="form-field__label">Фамилия*:</span>
-            <input class="form-block__input" type="text" name="last-name" placeholder="Введите вашу фамилию">
-          </label>
-          <label class="form-block__field-name" for="surname">
-            <span class="form-field__label">Отчество:</span>
-            <input class="form-block__input" type="text" name="surname" placeholder="Введите ваше отчество">
-          </label>
+        <div class="form-revocation__wrapper">
+          <fieldset class="form-revocation__item form-block">
+            <legend class="form-block__legend font-header">Представьтесь:</legend>
+            <div class="form-block__wrapper">
+              <label class="form-block__field-name form-field" for="name">
+                <span class="form-field__label">Имя*:</span>
+                <input class="form-block__input" type="text" name="name" placeholder="Введите ваше имя">
+              </label>
+              <label class="form-block__field-name form-field" for="last-name">
+                <span class="form-field__label">Фамилия*:</span>
+                <input class="form-block__input" type="text" name="last-name" placeholder="Введите вашу фамилию">
+              </label>
+              <label class="form-block__field-name form-field" for="surname">
+                <span class="form-field__label">Отчество:</span>
+                <input class="form-block__input" type="text" name="surname" placeholder="Введите ваше отчество">
+              </label>
+            </div>
+          </fieldset>
+        </div>
+
+        <fieldset class="form-revocation__item form-block">
+          <legend class="form-block__legend font-header">Контактная информация:</legend>
+          <div class="form-block__wrapper">
+            <label class="form-block__field-name form-field" for="tel">
+              <span class="form-field__label">Контактный телефон*:</span>
+              <div class="form-block__field-wrapper">
+                <input class="form-block__input" type="tel" name="tel" placeholder="Введите телефон">
+                <button class="form-field__button">
+                  <span class="visually-hidden">Телефон</span>
+                </button>
+              </div>
+            </label>
+            <label class="form-block__field-name form-field" for="email">
+              <span class="form-field__label">Электронная почта*:</span>
+              <div class="form-block__field-wrapper">
+                <input class="form-block__input" type="email" name="email" placeholder="Введите e-mail">
+                <button class="form-field__button">
+                  <span class="visually-hidden">E-mail</span>
+                </button>
+              </div>
+            </label>
+          </div>
         </fieldset>
 
-        <fieldset class="form-block">
-          <legend class="form-block__legend">Контактная информация:</legend>
-          <label class="form-block__field-name form-field" for="tel">
-            <span class="form-field__label">Контактный телефон*:</span>
-            <input class="form-block__input" type="tel" name="tel" placeholder="Введите телефон">
-            <button class="form-field__button">
-              <span class="visually-hidden">Телефон</span>
-            </button>
-          </label>
-          <label class="form-block__field-name form-field" for="email">
-            <span class="form-field__label">Электронная почта*:</span>
-            <input class="form-block__input" type="email" name="email" placeholder="Введите e-mail">
-            <button class="form-field__button">
-              <span class="visually-hidden">E-mail</span>
-            </button>
-          </label>
-        </fieldset>
-
-        <fieldset class="form-block">
-          <legend class="form-block__legend">Ваше общее впечатление:</legend>
+        <fieldset class="form-revocation__item--individual form-block">
+          <legend class="form-block__legend form-block__legend--impression font-header">Ваше общее впечатление:</legend>
           <ul class="impression-list">
             <li class="impression-list__item">
               <label class="form-radio-button">
@@ -115,8 +127,8 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form-block">
-          <legend class="form-block__legend">Посещенные достопримечательности:</legend>
+        <fieldset class="form-revocation__item--individual form-block">
+          <legend class="form-block__legend form-block__legend--visit font-header">Посещенные<br> достопримечательности:</legend>
           <ul class="attractions-list">
             <li class="attractions-list__item">
               <label class="form-checkbox" for="devil-bridge">
@@ -145,14 +157,20 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form-block">
-          <legend class="form-block__legend">Опишите свои эмоции:</legend>
+        <fieldset class="form-revocation__item--individual form-block">
+          <legend class="form-block__legend font-header">Опишите свои эмоции:</legend>
           <label class="visually-hidden" for="emotions">Опишите эмоции</label>
-          <textarea class="form-field-emotions" name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+
+          <div class="form-revocation__wrapper-textarea">
+            <textarea class="form-block__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+              <div class="form-revocation__wrapper-button">
+                <button class="form-revocation__button font-header" type="button">Отправить отзыв</button>
+                <p class="font-paragraph">*-обязательные поля</p>
+              </div>
+          </div>
+
         </fieldset>
 
-        <button class="form-revocation__button" type="button">Отправить отзыв</button>
-        <p>*-обязательные поля</p>
       </form>
     </section>
 
