@@ -1,0 +1,19 @@
+.photo-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.photo-list__wrapper {
+  &--desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.photo-list__item {
+  &--premier-desktop {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}

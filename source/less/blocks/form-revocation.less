@@ -1,0 +1,36 @@
+.form-revocation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form-revocation__wrapper {
+  border-right: 1px solid hsl(0, 0%, 86%);
+  margin-bottom: 71px;
+}
+
+.form-revocation__item {
+  &--individual {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.form-revocation__wrapper-textarea {
+  width: 768px;
+  margin: 0 auto 64px;
+}
+
+.form-revocation__wrapper-button {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-revocation__button {
+  display: block;
+  padding: 16px;
+  width: 384px;
+  border: none;
+  color: @font-color-secondary;
+  background-color: @background-block-color;
+}

@@ -1,0 +1,50 @@
+.photo-card {
+  position: relative;
+}
+
+.photo-card__image {
+  display: block;
+  width: 100%;
+}
+
+.photo-card__signature {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &--desktop {
+    color: @font-color-secondary;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.photo-card__wrapper-name {
+  &--desktop {
+    padding: 22px 0 15px 20px;
+  }
+}
+
+.photo-card__name,
+.photo-card__likes {
+  font-family: @main-font;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 100%;
+
+  &--desktop {
+    padding: 32px 20px 27px 0;
+  }
+}
+
+.photo-card__author-key,
+.photo-card__author-value {
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 100%;
+}
