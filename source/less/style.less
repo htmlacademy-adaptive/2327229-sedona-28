@@ -35,8 +35,14 @@
 }
 
 @main-font: "PT-Sans", "Arial", sans-serif;
+@main-font-size-header: 21px;
+@main-font-size-paragraph: 14px;
+@font-size-header-mobile: 18px;
+@font-size-paragraph-mobile: 14px;
 @background-block-color: #81B3D2;
 @font-color-secondary: #FFFFFF;
+@tablet-width: 768px;
+@desktop-width: 1200px;
 
 html {
   height: 100%;
@@ -69,16 +75,20 @@ body {
   font-family: @main-font;
   font-style: bold;
   font-weight: 700;
-  font-size: 21px;
+  font-size: @font-size-header-mobile;
   text-transform: uppercase;
   text-align: center;
+}
+
+.font-header__secondary {
+  font-size: @main-font-size-header;
 }
 
 .font-paragraph {
   font-family: @main-font;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: @main-font-size-paragraph;
   text-transform: uppercase;
   text-align: center;
 }

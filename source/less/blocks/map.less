@@ -1,6 +1,14 @@
 .map {
   height: 350px;
-  background-image: url("../../img/map-desktop.jpg.jpg");
+  background-image: url("../../img/map-mobile.jpg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (min-width: @tablet-width) {
+  background-image: url("../../img/map-tablet.jpg");
+}
+
+@media (min-width: @tablet-width) {
+  background-image: url("../../img/map-desktop.jpg.jpg");
 }
