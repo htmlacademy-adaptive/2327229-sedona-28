@@ -215,6 +215,9 @@
   padding: 36px 0 28px;
   margin: 0 auto;
 }
+.info-block__wrapper--catalog-videopresentation {
+  margin: 17px auto 38px;
+}
 .info-block__header.info-block__header {
   margin: 0 0 35px;
 }
