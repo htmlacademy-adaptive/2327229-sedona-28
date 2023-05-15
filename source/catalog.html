@@ -10,59 +10,60 @@
 <body class="page__body">
   <header class="main-header">
     <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-navigation__list site-list">
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-img" src="img/logo.svg" alt="Город Седона">
+      </a>
+      <ul class="main-navigation__list main-navigation__list--open site-list">
         <li class="site-list__item">
-          <a class="site-list__link" href="index.html">
-            Главная
+          <a class="site-list__link">
+            <p class="site-list__link-text">Главная</p>
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--active">
-            Фото и видео
+          <a class="site-list__link site-list__link--active" href="catalog.html">
+            <p class="site-list__link-text">Фото и видео</p>
           </a>
         </li>
-        <li class="site-list__item site-list__item--logo">
-          <a class="main-header__logo" href="index.html">
-            <img src="img/logo.svg" alt="Город Седона">
-          </a>
-        </li>
+        <li class="site-list__empty"></li>
         <li class="site-list__item">
           <a class="site-list__link" href="form.html">
-            Форма отзыва
+            <p class="site-list__link-text">Форма отзыва</p>
           </a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="#">
-            HTML ACADEMY
+            <p class="site-list__link-text">HTML ACADEMY</p>
           </a>
         </li>
       </ul>
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </nav>
   </header>
 
   <main class="main-container">
     <section class="main-banner main-banner__inner-page">
       <h1 class="visually-hidden">Город Седона</h1>
-      <img class="main-banner__title" src="img/sedona.svg" alt="Sedona">
+      <div class="main-banner__title main-banner__title--secondary"><span class="visually-hidden">Седона</span></div>
+      <!--<img class="main-banner__title" src="img/sedona.svg" alt="Sedona">-->
     </section>
 
-    <section class="info-block">
+    <section class="info-block info-block__catalog">
       <div class="info-block__wrapper info-block__wrapper--catalog">
-        <h2 class="info-block__header info-block__header--big font-header">Фото и видео</h2>
+        <h2 class="info-block__header font-header font-header__secondary">Фото и видео</h2>
         <p class="info-block__cover font-paragraph">Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
     </section>
 
     <section class="photo-gallery">
       <h2 class="visually-hidden">Фотогалерея</h2>
-      <ul class="photo-list photo-list__wrapper--desktop">
-        <li class="photo-list__item--premier-desktop photo-card">
-          <img class="photo-card__image" src="./img/photo-1-desktop.jpg.jpg" alt="Фото 1">
-          <div class="photo-card__signature photo-card__signature--desktop">
-            <div class="photo-card__wrapper-name--desktop">
+      <ul class="photo-list photo-list__wrapper">
+        <li class="photo-list__item photo-list__item--premier-desktop photo-card__premier-desktop">
+          <div class="photo-card__image photo-card__image--1"><span class="visually-hidden">Фото 1</span></div>
+          <!--<img class="photo-card__image" src="./img/photo-1-desktop.jpg.jpg" alt="Фото 1">-->
+          <div class="photo-card__signature photo-card__signature--premier photo-card__signature--desktop">
+            <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
               <strong class="photo-card__name">Неродные просторы</strong>
               <div class="photo-card__wrapper-author">
                 <span class="photo-card__author-key">Автор фото:</span>
@@ -72,10 +73,11 @@
             <span class="photo-card__likes photo-card__likes--desktop">1350</span>
           </div>
         </li>
-        <li class="photo-list__item--second-desktop photo-card">
-          <img class="photo-card__image" src="./img/photo-2-desktop.jpg.jpg" alt="Фото 2">
-          <div class="photo-card__signature photo-card__signature--desktop">
-            <div class="photo-card__wrapper-name--desktop">
+        <li class="photo-list__item photo-list__item--second-desktop photo-card">
+          <div class="photo-card__image photo-card__image--2"><span class="visually-hidden">Фото 2</span></div>
+          <!--<img class="photo-card__image" src="./img/photo-2-desktop.jpg.jpg" alt="Фото 2">-->
+          <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
+            <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
               <strong class="photo-card__name">Местная растительность</strong>
               <div class="photo-card__wrapper-author">
                 <span class="photo-card__author-key">Автор фото:</span>
@@ -86,9 +88,10 @@
           </div>
         </li>
         <li class="photo-list__item photo-card">
-          <img class="photo-card__image" src="./img/photo-3-desktop.jpg.jpg" alt="Фото 3">
-          <div class="photo-card__signature photo-card__signature--desktop">
-            <div class="photo-card__wrapper-name--desktop">
+          <div class="photo-card__image photo-card__image--3"><span class="visually-hidden">Фото 3</span></div>
+          <!--<img class="photo-card__image" src="./img/photo-3-desktop.jpg.jpg" alt="Фото 3">-->
+          <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
+            <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
               <strong class="photo-card__name">Дорога на север</strong>
               <div class="photo-card__wrapper-author">
                 <span class="photo-card__author-key">Автор фото:</span>
@@ -99,9 +102,10 @@
           </div>
         </li>
         <li class="photo-list__item photo-card">
-          <img class="photo-card__image" src="./img/photo-4-desktop.jpg.jpg" alt="Фото 4">
-          <div class="photo-card__signature photo-card__signature--desktop">
-            <div class="photo-card__wrapper-name--desktop">
+          <div class="photo-card__image photo-card__image--4"><span class="visually-hidden">Фото 4</span></div>
+          <!--<img class="photo-card__image" src="./img/photo-4-desktop.jpg.jpg" alt="Фото 4">-->
+          <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
+            <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
               <strong class="photo-card__name">Мост Дьявола</strong>
               <div class="photo-card__wrapper-author">
                 <span class="photo-card__author-key">Автор фото:</span>
@@ -115,15 +119,15 @@
     </section>
 
     <section class="info-block">
-      <div class="info-block__wrapper info-block__wrapper--catalog">
-        <h2 class="info-block__header info-block__header--big font-header">Все еще сомневаетесь?</h2>
-        <p class="info-block__cover font-paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <div class="info-block__wrapper info-block__wrapper--catalog-videopresentation">
+        <h2 class="info-block__header info-block__header--mobile font-header font-header__secondary">Все еще сомневаетесь?</h2>
+        <p class="info-block__cover info-block__cover-mobile font-paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
     </section>
 
     <section class="videopresentation">
       <h2 class="visually-hidden">Видеопрезентация городка Седона</h2>
-      <img class="videopresentation__preview" src="./img/video-tablet.jpg" alt="Превью видео">
+      <div class="videopresentation__preview"><span class="visually-hidden">Превью видео</span></div>
     </section>
 
   </main>
