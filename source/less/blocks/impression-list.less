@@ -1,9 +1,32 @@
 .impression-list {
   margin: 0 auto;
-  margin-bottom: 73px;
+  margin-bottom: 24px;
   padding: 0;
   list-style-type: none;
   max-width: 854px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .impression-list {
+    flex-direction: row;
+    width: 576px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+
+  .impression-list__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression-list {
+    width: 854px;
+  }
 }

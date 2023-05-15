@@ -1,23 +1,22 @@
 .form-revocation {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
 }
 
 .form-revocation__wrapper {
-  border-right: 1px solid hsl(0, 0%, 86%);
-  margin-bottom: 71px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .form-revocation__item {
-  &--individual {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
+  width: 280px;
+  margin: 0 auto;
 }
 
 .form-revocation__wrapper-textarea {
-  width: 768px;
-  margin: 0 auto 64px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .form-revocation__wrapper-button {
@@ -33,4 +32,73 @@
   border: none;
   color: @font-color-secondary;
   background-color: @background-block-color;
+}
+
+
+@media (min-width: @tablet-width) {
+  .form-revocation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .form-revocation__wrapper {
+    border-right: 1px solid hsl(0, 0%, 86%);
+    margin-bottom: 55px;
+    width: 335px;
+  }
+
+  .form-revocation__item {
+    &--individual {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    &--represent {
+      width: 295px;
+      margin-bottom: 0;
+    }
+  }
+
+  .form-revocation__wrapper-textarea {
+    width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-revocation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 960px;
+  }
+
+  .form-revocation__wrapper {
+    border-right: 1px solid hsl(0, 0%, 86%);
+    margin-bottom: 71px;
+    width: 430px;
+    padding-right: 50px;
+  }
+
+  .form-revocation__wrapper-textarea {
+    width: 768px;
+  }
+
+  .form-revocation__item {
+    &--individual {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    &--represent {
+      width: 430px;
+      padding: 0;
+    }
+
+    &--contact {
+      width: 430px;
+      margin-left: 50px;
+    }
+  }
 }
