@@ -3,10 +3,13 @@
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .card-condition__item {
-  width: 300px;
+  //width: 300px;
   padding: 60px 30px;
   margin: 0 auto;
 }
@@ -19,10 +22,32 @@
 
 .card-condition__text-header {
   display: block;
-  margin: 0 auto;
   margin-bottom: 16px;
 }
 
 .card-condition__text-description {
-  margin: 0 auto;
+  display: inline;
+}
+
+@media (min-width: @tablet-width) {
+  .card-condition {
+    flex-direction: row;
+  }
+
+  .card-condition__item {
+    min-width: 190px;
+  }
+
+  .card-condition__text-description {
+    display: block;
+    margin: 0 auto;
+    width: 190px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card-condition__text-description {
+    display: block;
+    width: 300px;
+  }
 }

@@ -1,5 +1,6 @@
 .social-list {
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 37px;
   padding: 0;
   list-style-type: none;
   width: 156px;
@@ -17,4 +18,10 @@
 .social-list__image {
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .social-list {
+    margin-bottom: 0;
+  }
 }

@@ -2,11 +2,16 @@
   //
 }
 
+.info-block__catalog {
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+
 .info-block__wrapper {
-  max-width: 458px;
-  min-width: 284px;
+  //max-width: 458px;
+  width: 284px;
 
   &--slogan {
+    padding: 0 10px;
     margin: 52px auto 51px;
   }
 
@@ -15,21 +20,24 @@
   }
 
   &--catalog {
-    padding: 66px 0;
-    margin: 0 auto;
+    margin: 37px auto 25px;
   }
 
   &--review {
-    padding: 64px 0 108px;
+    padding: 36px 0 28px;
     margin: 0 auto;
+  }
+
+  &--catalog-videopresentation {
+    margin: 17px auto 38px;
   }
 }
 
 .info-block__header.info-block__header {
   margin: 0 0 35px;
 
-  &--big {
-    font-size: 30px;
+  &--review {
+    width: 280px;
   }
 }
 
@@ -42,8 +50,88 @@
   color: @font-color-secondary;
   background-color: @background-block-color;
   border: none;
-  width: 458px;
+  width: 284px;
   padding: 16px 0;
   margin: 0 auto;
   margin-bottom: 55px;
+}
+
+@media (min-width: @tablet-width) {
+  .info-block__wrapper {
+    width: 520px;
+
+    &--slogan {
+      padding: 0 10px;
+      margin: 48px auto 55px;
+    }
+
+    &--interesting {
+      width: 435px;
+      margin: 60px auto 44px;
+    }
+
+    &--catalog {
+      margin: 66px auto 67px;
+    }
+
+    &--catalog-videopresentation {
+      margin: 58px auto 66px;
+    }
+
+    &--review {
+      width: 435px;
+      margin-bottom: 84px;
+      padding: 64px 0 0;
+    }
+  }
+
+  .info-block__catalog {
+    border-bottom: none;
+  }
+
+  .info-block__header.info-block__header {
+    //
+
+    &--big {
+      font-size: 30px;
+    }
+
+    &--mobile {
+      font-size: 21px;
+    }
+
+    &--review {
+      width: 320px;
+      margin: 0 auto 20px;
+    }
+  }
+
+  .info-block__cover {
+    font-size: 21px;
+
+    &-mobile {
+      font-size: 18px;
+    }
+  }
+
+  .info-block__button-search {
+    width: 458px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info-block__wrapper {
+    width: 520px;
+
+    &--slogan {
+      padding: 0 10px;
+      margin: 59px auto 44px;
+    }
+
+    &--review {
+      width: 435px;
+      margin-bottom: 84px;
+      padding: 64px 0 0;
+    }
+  }
 }

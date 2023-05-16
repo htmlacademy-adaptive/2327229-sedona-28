@@ -1,6 +1,10 @@
+.main-navigation {
+  position: relative;
+}
+
 .main-navigation__list {
-  display: flex;
-  justify-content: space-around;
+  //display: flex;
+  //justify-content: space-around;
 }
 
 .main-navigation__toggle {
@@ -8,6 +12,15 @@
   width: 23px;
   height: 23px;
   border: none;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+}
 
-  display: none;
+@media (min-width: @tablet-width) {
+  //display: flex;
+  //justify-content: space-around;
+  .main-navigation__toggle {
+    display: none;
+  }
 }

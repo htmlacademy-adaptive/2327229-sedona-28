@@ -1,14 +1,25 @@
 .card {
   display: flex;
+  flex-direction: column;
+}
+
+.card__reverse {
+  flex-direction: column-reverse;
 }
 
 .card__image {
   display: block;
+  height: 260px;
+  object-fit: cover;
+  background-image: url("../../img/photo-city-tablet.jpg");
+  background-repeat: no-repeat;
 }
 
 .card__reason {
-  width: 100%;
-  background-color: hsl(0, 0%, 93%);
+  //width: 100%;
+  background-color: rgb(237, 237, 237);
+  padding-left: 18px;
+  padding-right: 18px;
 
   &--accent {
     background-color: @background-block-color;
@@ -17,15 +28,21 @@
 }
 
 .card__wrapper {
-  max-width: 300px;
-  min-width: 190px;
-  padding: 52px 33px;
+  //max-width: 300px;
+  //min-width: 190px;
+  width: 284px;
+  padding: 52px 0;
   margin: 0 auto;
+  border-bottom: 1px solid rgb(214, 214, 214);
+
+  &--last {
+    border: none;
+  }
 }
 
 .card__text-header {
   display: block;
-  width: 150px;
+  width: 250px;
   margin: 0 auto;
   margin-bottom: 12px;
 }
@@ -36,5 +53,49 @@
 }
 
 .card__text-description {
-  margin: 0;
+  margin: 0 auto;
+  width: 250px;
+}
+
+@media (min-width: @tablet-width) {
+  .card {
+    //width: 100%;
+    flex-direction: row;
+  }
+
+  .card__image {
+    min-width: 512px;
+  }
+
+  .card__reason {
+    padding: 0;
+    flex-grow: 1;
+    width: 256px;
+  }
+
+  .card__wrapper {
+    //width: 100%;
+    border: none;
+    width: 256px;
+    margin: 0 auto;
+    margin-top: 52px;
+    margin-bottom: 31px;
+    padding: 0;
+
+    &--secondary {
+      margin-bottom: 52px;
+    }
+  }
+
+  .card__text-header {
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+
+  .card__text-description {
+    margin: 0 auto;
+    width: 190px;
+  }
 }
