@@ -1,5 +1,5 @@
 .info-block {
-  //
+  position: relative;
 }
 
 .info-block__catalog {
@@ -12,11 +12,31 @@
 
   &--slogan {
     padding: 0 10px;
-    margin: 52px auto 51px;
+    margin: 32px auto 16px;
+  }
+
+  &--slogan::before {
+    content: url("../img/intro-triangle.svg");
+    position: absolute;
+    top: -89px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &--slogan::after {
+    content: url("../img/white-copy.svg");
+    position: absolute;
+    top: 169px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
   &--interesting {
-    margin: 60px auto 44px;
+    margin: 38px auto 32px;
   }
 
   &--catalog {
@@ -39,6 +59,10 @@
   &--review {
     width: 280px;
   }
+
+  &--medium {
+    font-size: 21px;
+  }
 }
 
 .info-block__cover {
@@ -53,7 +77,7 @@
   width: 284px;
   padding: 16px 0;
   margin: 0 auto;
-  margin-bottom: 55px;
+  margin-bottom: 49px;
 }
 
 @media (min-width: @tablet-width) {
@@ -63,6 +87,20 @@
     &--slogan {
       padding: 0 10px;
       margin: 48px auto 55px;
+    }
+
+    &--slogan::before {
+      content: url("../img/intro-triangle.svg");
+      position: absolute;
+      top: -105px;
+      left: 0;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+
+    &--slogan::after {
+      display: none;
     }
 
     &--interesting {
@@ -128,10 +166,19 @@
       margin: 59px auto 44px;
     }
 
+    &--slogan::before {
+      top: -116px;
+    }
+
     &--review {
       width: 435px;
       margin-bottom: 84px;
       padding: 64px 0 0;
     }
+  }
+
+  .info-block__cover {
+    width: 435px;
+    margin: 0 auto;
   }
 }
