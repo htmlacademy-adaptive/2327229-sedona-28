@@ -1,7 +1,7 @@
 .photo-card,
 .photo-card__premier-desktop {
   position: relative;
-  padding: 0 20px;
+  //padding: 0 20px 25px;
 }
 
 .photo-card__image {
@@ -28,11 +28,6 @@
   }
 }
 
-
-.photo-card__signature {
-  //
-}
-
 .photo-card__wrapper-name {
   padding: 15px 0 11px;
 }
@@ -49,6 +44,13 @@
   &--desktop {
     padding: 32px 20px 27px 0;
   }
+}
+
+.photo-card__likes::before {
+  content: url("../../img/like-icon.svg.svg");
+  margin-right: 14px;
+  position: relative;
+  top: 2px;
 }
 
 .photo-card__author-key,
@@ -68,10 +70,22 @@
     left: -21px;
   }
 
+  .photo-card__wrapper-name {
+    padding: 22px 0 15px;
+  }
+
   .photo-card__premier-desktop {
     position: relative;
     padding: 0;
     left: -184px;
+  }
+
+  .photo-card__likes {
+    padding: 28px 0 31px;
+  }
+
+  .photo-card__likes::before {
+    margin-right: 9px;
   }
 
   .photo-card__signature {
@@ -79,6 +93,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
+    width: 80px;
 
     &--premier {
       width: 608px;
@@ -132,6 +147,15 @@
     left: -460px;
   }
 
+  .photo-card__name {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .photo-card__likes::before {
+    content: url("../img/like-icon-desktop.svg");
+  }
+
   .photo-card__image {
     display: block;
     width: 100%;
@@ -170,6 +194,7 @@
       background-color: rgba(0, 0, 0, 0.3);
       position: absolute;
       bottom: 0;
+      height: 80px;
     }
 
     &--premier {
@@ -183,7 +208,7 @@
 
   .photo-card__wrapper-name {
     &--desktop {
-      padding: 22px 0 15px 20px;
+      padding: 17px 0 17px 5px;
     }
   }
 }

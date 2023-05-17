@@ -43,6 +43,16 @@
     margin: 37px auto 25px;
   }
 
+  &--catalog::before {
+    content: url("../img/intro-triangle.svg");
+    position: absolute;
+    top: -94px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
   &--review {
     padding: 36px 0 28px;
     margin: 0 auto;
@@ -67,6 +77,10 @@
 
 .info-block__cover {
   margin: 0;
+
+  &--mobile {
+    width: 260px;
+  }
 }
 
 .info-block__button-search {
@@ -112,6 +126,16 @@
       margin: 66px auto 67px;
     }
 
+    &--catalog::before {
+      content: url("../img/intro-triangle.svg");
+      position: absolute;
+      top: -123px;
+      left: 0;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+
     &--catalog-videopresentation {
       margin: 58px auto 66px;
     }
@@ -128,14 +152,8 @@
   }
 
   .info-block__header.info-block__header {
-    //
-
     &--big {
       font-size: 30px;
-    }
-
-    &--mobile {
-      font-size: 21px;
     }
 
     &--review {
@@ -146,6 +164,8 @@
 
   .info-block__cover {
     font-size: 21px;
+    width: 445px;
+    margin: 0 auto;
 
     &-mobile {
       font-size: 18px;
@@ -170,6 +190,14 @@
       top: -116px;
     }
 
+    &--catalog {
+      margin: 100px auto 65px;
+    }
+
+    &--catalog::before {
+      top: -157px;
+    }
+
     &--review {
       width: 435px;
       margin-bottom: 84px;
@@ -178,7 +206,7 @@
   }
 
   .info-block__cover {
-    width: 435px;
+    width: 445px;
     margin: 0 auto;
   }
 }
