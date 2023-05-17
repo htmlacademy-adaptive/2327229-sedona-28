@@ -1,15 +1,59 @@
 .form-block {
   border: none;
   padding: 0 20px;
-  margin-bottom: 35px;
+}
+
+.form-block__represent {
+  border: none;
+  padding: 0;
+  padding-bottom: 23px;
+}
+
+.form-block:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.form-block:not(:first-child) {
+  margin-top: 24px;
+}
+
+.form-block__bottom {
+  &--represent {
+    //padding-bottom: 23px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &--contact {
+    padding: 0;
+    padding-bottom: 18px;
+  }
+
+  &--impression {
+    padding-bottom: 10px;
+  }
+
+  &--visit {
+    padding-bottom: 10px;
+  }
+
+  &--emotions {
+    padding-bottom: 22px;
+  }
 }
 
 .form-block__wrapper {
   width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .form-block__legend {
   margin-bottom: 28px;
+
+  &--contact {
+    margin: 0 auto 28px;
+  }
 
   &--impression {
     margin-bottom: 20px;
@@ -36,6 +80,11 @@
   background-color: hsl(0, 0%, 95%);
   border: none;
   width: 248px;
+  height: 26px;
+
+  &--contact {
+    width: 190px;
+  }
 
   &::placeholder {
     font-family: @main-font;
@@ -67,13 +116,80 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form-block__input {
-    width: 263px;
-  }
-
   .form-block {
     margin-bottom: 0;
     padding: 0;
+  }
+
+  .form-block__input {
+    width: 263px;
+
+    &--contact {
+      width: 205px;
+    }
+  }
+
+  .form-block__legend {
+    padding-top: 8px;
+
+    &--contact {
+      width: 278px;
+    }
+
+    &--impression {
+      width: 402px;
+    }
+
+    &--visit {
+      width: 402px;
+    }
+
+    &--emotions {
+      width: 402px;
+    }
+  }
+
+  .form-block__field-wrapper {
+    width: 295px;
+  }
+
+  .form-block__legend.form-block__legend {
+    font-size: 21px;
+  }
+
+  .form-block:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .form-block:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .form-block__field-name:last-child {
+    margin-bottom: 0;
+  }
+
+  .form-block__bottom {
+    &--represent {
+      border-bottom: none;
+    }
+
+    &--contact {
+      //padding-bottom: 18px;
+    }
+
+    &--impression {
+      border-top: 1px solid #dbdbdb;
+    }
+
+    &--visit {
+      border-top: 1px solid #dbdbdb;
+    }
+
+    &--emotions {
+      padding-bottom: 64px;
+      border-top: 1px solid #dbdbdb;
+    }
   }
 
   .form-block__textarea {
@@ -84,6 +200,10 @@
 @media (min-width: @desktop-width) {
   .form-block__input {
     width: 398px;
+
+    &--contact {
+      width: 340px;
+    }
   }
 
   .form-block__wrapper {
@@ -98,6 +218,10 @@
     &--visit {
       margin-bottom: 59px;
     }
+  }
+
+  .form-block__field-wrapper {
+    width: 430px;
   }
 
   .form-block__textarea {

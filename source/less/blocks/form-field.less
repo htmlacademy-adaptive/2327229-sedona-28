@@ -14,7 +14,16 @@
 
 .form-field__button {
   width: 58px;
-  height: 48px;
+  height: 58px;
+  padding: 0;
   border: none;
   background-color: hsl(0, 0%, 90%);
+
+  &--phone::before {
+    content: url("../img/phone.svg");
+  }
+
+  &--mail::before {
+    content: url("../img/mail.svg");
+  }
 }

@@ -1,0 +1,27 @@
+.form-checkbox {
+  position: relative;
+}
+
+.form-checkbox__label {
+  display: block;
+  margin-top: 10px;
+  margin-left: 62px;
+}
+
+.form-checkbox__mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.form-checkbox__item[type="checkbox"]:checked + .form-checkbox__mark::after {
+  content: url("../img/tick.svg");
+  position: absolute;
+  top: 15px;
+  left: 12px;
+}

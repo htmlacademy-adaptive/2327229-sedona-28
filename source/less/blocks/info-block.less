@@ -54,8 +54,19 @@
   }
 
   &--review {
+    width: 100%;
     padding: 36px 0 28px;
-    margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &--review::before {
+    content: url("../img/intro-triangle.svg");
+    position: absolute;
+    top: -56px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
   &--catalog-videopresentation {
@@ -68,6 +79,7 @@
 
   &--review {
     width: 280px;
+    margin: 0 auto 35px;
   }
 
   &--medium {
@@ -80,6 +92,10 @@
 
   &--mobile {
     width: 260px;
+  }
+
+  &--review {
+    width: 280px;
   }
 }
 
@@ -142,8 +158,14 @@
 
     &--review {
       width: 435px;
-      margin-bottom: 84px;
+      margin: 0 auto;
+      margin-bottom: 100px;
       padding: 64px 0 0;
+      border: none;
+    }
+
+    &--review::before {
+      top: -56px;
     }
   }
 
@@ -200,8 +222,12 @@
 
     &--review {
       width: 435px;
-      margin-bottom: 84px;
-      padding: 64px 0 0;
+      margin-bottom: 60px;
+      padding: 115px 0 0;
+    }
+
+    &--review::before {
+      top: -57px;
     }
   }
 

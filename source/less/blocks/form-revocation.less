@@ -5,13 +5,28 @@
 }
 
 .form-revocation__wrapper {
-  width: 320px;
-  margin: 0 auto;
+  width: 100%;
+  //margin: 0 auto;
+}
+
+.form-revocation__mark {
+  margin: 0 0 0 auto;
+  color: #33333399;
 }
 
 .form-revocation__item {
   width: 280px;
   margin: 0 auto;
+
+  &--represent {
+    width: 100%;
+  }
+
+  &--contact {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .form-revocation__wrapper-textarea {
@@ -32,6 +47,7 @@
   border: none;
   color: @font-color-secondary;
   background-color: @background-block-color;
+  cursor: pointer;
 }
 
 
@@ -45,7 +61,7 @@
 
   .form-revocation__wrapper {
     border-right: 1px solid hsl(0, 0%, 86%);
-    margin-bottom: 55px;
+    margin-bottom: 63px;
     width: 335px;
   }
 
@@ -64,6 +80,11 @@
   .form-revocation__wrapper-textarea {
     width: 648px;
     margin: 0 auto;
+  }
+
+  .form-revocation__mark {
+    margin: 20px 0 0 auto;
+    color: #333333;
   }
 }
 
