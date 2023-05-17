@@ -518,10 +518,10 @@
     width: 800px;
   }
   .card__image--1 {
-    background-image: url("../../img/photo-city-desktop.jpg");
+    background-image: url("../img/photo-city-desktop.jpg");
   }
   .card__image--2 {
-    background-image: url("../../img/photo-bridge-desktop.jpg");
+    background-image: url("../img/photo-bridge-desktop.jpg");
   }
   .card__wrapper {
     width: 300px;
@@ -592,17 +592,17 @@
     flex-direction: column;
   }
   .card-condition__text-header--house::before {
-    content: url("../../img/icon-house.svg");
+    content: url("../img/icon-house.svg");
     margin-right: 0;
     margin-bottom: 26px;
   }
   .card-condition__text-header--food::before {
-    content: url("../../img/icon-burger.svg");
+    content: url("../img/icon-burger.svg");
     margin-right: 0;
     margin-bottom: 26px;
   }
   .card-condition__text-header--souvenirs::before {
-    content: url("../../img/icon-gift.svg");
+    content: url("../img/icon-gift.svg");
     margin-right: 0;
     margin-bottom: 14px;
   }
@@ -873,7 +873,7 @@
   padding: 32px 20px 27px 0;
 }
 .photo-card__likes::before {
-  content: url("../../img/like-icon.svg.svg");
+  content: url("../img/like-icon.svg.svg");
   margin-right: 14px;
   position: relative;
   top: 2px;
@@ -1460,14 +1460,14 @@
   font-family: "PT-Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT-Sans";
   font-style: bold;
   font-weight: 700;
-  src: url("../../fonts/ptsansbold.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
   font-display: swap;
 }
 html {
