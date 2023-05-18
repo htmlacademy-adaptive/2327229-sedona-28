@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="js/app.js"></script>
   <title>Фото и видео</title>
 </head>
 <body class="page__body">
@@ -17,33 +19,35 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-img" src="img/logo.svg" alt="Город Седона">
       </a>
-      <ul class="main-navigation__list main-navigation__list--open site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="index.html">
-            <p class="site-list__link-text">Главная</p>
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--active">
-            <p class="site-list__link-text">Фото и видео</p>
-          </a>
-        </li>
-        <li class="site-list__empty"></li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">
-            <p class="site-list__link-text">Форма отзыва</p>
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">
-            <p class="site-list__link-text">HTML ACADEMY</p>
-          </a>
-        </li>
-      </ul>
+      <div class="site-list__wrapper">
+        <ul class="main-navigation__list main-navigation__list--open site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">
+              <p class="site-list__link-text">Главная</p>
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">
+              <p class="site-list__link-text">Фото и видео</p>
+            </a>
+          </li>
+          <li class="site-list__empty"></li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">
+              <p class="site-list__link-text">Форма отзыва</p>
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">
+              <p class="site-list__link-text">HTML ACADEMY</p>
+            </a>
+          </li>
+        </ul>
+      </div>
       <button class="main-navigation__toggle-open" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <button class="main-navigation__toggle-close" type="button">
+      <button class="main-navigation__toggle-close main-navigation__toggle-close--none" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
     </nav>
