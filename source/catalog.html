@@ -63,8 +63,12 @@
       <ul class="photo-list photo-list__wrapper">
         <li class="photo-list__item photo-list__item--premier-desktop photo-card__premier-desktop">
           <div class="photo-list__item-wrapper">
-            <div class="photo-card__image photo-card__image--1"><span class="visually-hidden">Фото 1</span></div>
-            <!--<img class="photo-card__image" src="./img/photo-1-desktop.jpg.jpg" alt="Фото 1">-->
+            <!--<div class="photo-card__image photo-card__image--1"><span class="visually-hidden">Фото 1</span></div>-->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg" width="1200px" height="400px">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg" width="648px" height="400px">
+              <img class="photo-card__image" src="./img/photo-1-mobile.jpg" width="280px" height="280px" alt="Фото 1">
+            </picture>
             <div class="photo-card__signature photo-card__signature--premier photo-card__signature--desktop">
               <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
                 <strong class="photo-card__name">Неродные просторы</strong>
@@ -79,8 +83,12 @@
         </li>
         <li class="photo-list__item photo-list__item--second-desktop photo-card">
           <div class="photo-list__item-wrapper">
-            <div class="photo-card__image photo-card__image--2"><span class="visually-hidden">Фото 2</span></div>
-            <!--<img class="photo-card__image" src="./img/photo-2-desktop.jpg.jpg" alt="Фото 2">-->
+            <!--<div class="photo-card__image photo-card__image--2"><span class="visually-hidden">Фото 2</span></div>-->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg" width="400px" height="267px">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg" width="324px" height="267px">
+              <img class="photo-card__image" src="./img/photo-2-mobile.jpg" width="280px" height="280px" alt="Фото 2">
+            </picture>
             <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
               <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
                 <strong class="photo-card__name">Местная растительность</strong>
@@ -95,8 +103,12 @@
         </li>
         <li class="photo-list__item photo-card">
           <div class="photo-list__item-wrapper">
-            <div class="photo-card__image photo-card__image--3"><span class="visually-hidden">Фото 3</span></div>
-            <!--<img class="photo-card__image" src="./img/photo-3-desktop.jpg.jpg" alt="Фото 3">-->
+            <!--<div class="photo-card__image photo-card__image--3"><span class="visually-hidden">Фото 3</span></div>-->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg" width="400px" height="267px">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg" width="324px" height="267px">
+              <img class="photo-card__image" src="./img/photo-3-mobile.jpg" width="280px" height="280px" alt="Фото 3">
+            </picture>
             <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
               <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
                 <strong class="photo-card__name">Дорога на север</strong>
@@ -111,8 +123,12 @@
         </li>
         <li class="photo-list__item photo-card">
           <div class="photo-list__item-wrapper">
-            <div class="photo-card__image photo-card__image--4"><span class="visually-hidden">Фото 4</span></div>
-            <!--<img class="photo-card__image" src="./img/photo-4-desktop.jpg.jpg" alt="Фото 4">-->
+            <!--<div class="photo-card__image photo-card__image--4"><span class="visually-hidden">Фото 4</span></div>-->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg" width="400px" height="267px">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg" width="324px" height="267px">
+              <img class="photo-card__image" src="./img/photo-4-mobile.jpg" width="280px" height="280px" alt="Фото 4">
+            </picture>
             <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
               <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
                 <strong class="photo-card__name">Мост Дьявола</strong>
@@ -137,7 +153,13 @@
 
     <section class="videopresentation">
       <h2 class="visually-hidden">Видеопрезентация городка Седона</h2>
-      <div class="videopresentation__preview"><span class="visually-hidden">Превью видео</span></div>
+      <span class="videopresentation__play-mark"></span>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg" width="800px" height="500px">
+        <source media="(min-width: 768px)" srcset="img/video-tablet.jpg" width="648px" height="500px">
+        <img class="videopresentation__preview" src="img/video-mobile.jpg" width="280px" height="177px" alt="Фото 4">
+      </picture>
+      <!--<div class="videopresentation__preview"><span class="visually-hidden">Превью видео</span></div>-->
     </section>
 
   </main>
