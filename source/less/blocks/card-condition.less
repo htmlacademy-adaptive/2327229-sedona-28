@@ -1,5 +1,5 @@
 .card-condition {
-  margin: 0;
+  margin: 26px auto 20px;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -10,7 +10,8 @@
 
 .card-condition__item {
   //width: 300px;
-  padding: 60px 30px;
+  width: 284px;
+  padding: 0 18px 26px;
   margin: 0 auto;
 }
 
@@ -21,33 +22,89 @@
 }
 
 .card-condition__text-header {
-  display: block;
-  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+
+  &--house::before {
+    content: url("../../img/icon-house-mobile.svg");
+    margin-right: 7px;
+  }
+
+  &--food::before {
+    content: url("../../img/icon-burger-mobile.svg");
+    margin-right: 7px;
+  }
+
+  &--souvenirs::before {
+    content: url("../../img/icon-gift-mobile.svg");
+    margin-right: 11px;
+  }
 }
 
 .card-condition__text-description {
-  display: inline;
+  display: block;
+  width: 237px;
+  margin: 0;
+  margin-left: 46px;
 }
 
 @media (min-width: @tablet-width) {
   .card-condition {
     flex-direction: row;
+    margin: 60px auto;
   }
 
   .card-condition__item {
-    min-width: 190px;
+    width: 190px;
+    padding: 0 33px;
+  }
+
+  .card-condition__text-header {
+    flex-direction: column;
+
+    &--house::before {
+      content: url("../img/icon-house.svg");
+      margin-right: 0;
+      margin-bottom: 26px;
+    }
+
+    &--food::before {
+      content: url("../img/icon-burger.svg");
+      margin-right: 0;
+      margin-bottom: 26px;
+    }
+
+    &--souvenirs::before {
+      content: url("../img/icon-gift.svg");
+      margin-right: 0;
+      margin-bottom: 14px;
+    }
   }
 
   .card-condition__text-description {
     display: block;
     margin: 0 auto;
     width: 190px;
+
+    &--wrapper {
+      display: block;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .card-condition__item {
+    width: 300px;
+    padding: 0 50px;
+  }
+
   .card-condition__text-description {
     display: block;
     width: 300px;
+
+    &--mod {
+      width: 200px;
+    }
   }
 }

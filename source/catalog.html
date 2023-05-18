@@ -36,8 +36,11 @@
           </a>
         </li>
       </ul>
-      <button class="main-navigation__toggle" type="button">
+      <button class="main-navigation__toggle-open" type="button">
         <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <button class="main-navigation__toggle-close" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
     </nav>
   </header>
@@ -50,8 +53,8 @@
 
     <section class="info-block info-block__catalog">
       <div class="info-block__wrapper info-block__wrapper--catalog">
-        <h2 class="info-block__header font-header font-header__secondary">Фото и видео</h2>
-        <p class="info-block__cover font-paragraph">Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике и экономике.</p>
+        <h2 class="info-block__header info-block__header--big font-header font-header__secondary">Фото и видео</h2>
+        <p class="info-block__cover font-paragraph">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
     </section>
 
@@ -59,59 +62,67 @@
       <h2 class="visually-hidden">Фотогалерея</h2>
       <ul class="photo-list photo-list__wrapper">
         <li class="photo-list__item photo-list__item--premier-desktop photo-card__premier-desktop">
-          <div class="photo-card__image photo-card__image--1"><span class="visually-hidden">Фото 1</span></div>
-          <!--<img class="photo-card__image" src="./img/photo-1-desktop.jpg.jpg" alt="Фото 1">-->
-          <div class="photo-card__signature photo-card__signature--premier photo-card__signature--desktop">
-            <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
-              <strong class="photo-card__name">Неродные просторы</strong>
-              <div class="photo-card__wrapper-author">
-                <span class="photo-card__author-key">Автор фото:</span>
-                <span class="photo-card__author-value">Борис</span>
+          <div class="photo-list__item-wrapper">
+            <div class="photo-card__image photo-card__image--1"><span class="visually-hidden">Фото 1</span></div>
+            <!--<img class="photo-card__image" src="./img/photo-1-desktop.jpg.jpg" alt="Фото 1">-->
+            <div class="photo-card__signature photo-card__signature--premier photo-card__signature--desktop">
+              <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
+                <strong class="photo-card__name">Неродные просторы</strong>
+                <div class="photo-card__wrapper-author">
+                  <span class="photo-card__author-key">Автор фото:</span>
+                  <span class="photo-card__author-value">Борис</span>
+                </div>
               </div>
+              <span class="photo-card__likes photo-card__likes--desktop">1350</span>
             </div>
-            <span class="photo-card__likes photo-card__likes--desktop">1350</span>
           </div>
         </li>
         <li class="photo-list__item photo-list__item--second-desktop photo-card">
-          <div class="photo-card__image photo-card__image--2"><span class="visually-hidden">Фото 2</span></div>
-          <!--<img class="photo-card__image" src="./img/photo-2-desktop.jpg.jpg" alt="Фото 2">-->
-          <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
-            <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
-              <strong class="photo-card__name">Местная растительность</strong>
-              <div class="photo-card__wrapper-author">
-                <span class="photo-card__author-key">Автор фото:</span>
-                <span class="photo-card__author-value">Сергей</span>
+          <div class="photo-list__item-wrapper">
+            <div class="photo-card__image photo-card__image--2"><span class="visually-hidden">Фото 2</span></div>
+            <!--<img class="photo-card__image" src="./img/photo-2-desktop.jpg.jpg" alt="Фото 2">-->
+            <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
+              <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
+                <strong class="photo-card__name">Местная растительность</strong>
+                <div class="photo-card__wrapper-author">
+                  <span class="photo-card__author-key">Автор фото:</span>
+                  <span class="photo-card__author-value">Сергей</span>
+                </div>
               </div>
+              <span class="photo-card__likes photo-card__likes--desktop">143</span>
             </div>
-            <span class="photo-card__likes photo-card__likes--desktop">143</span>
           </div>
         </li>
         <li class="photo-list__item photo-card">
-          <div class="photo-card__image photo-card__image--3"><span class="visually-hidden">Фото 3</span></div>
-          <!--<img class="photo-card__image" src="./img/photo-3-desktop.jpg.jpg" alt="Фото 3">-->
-          <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
-            <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
-              <strong class="photo-card__name">Дорога на север</strong>
-              <div class="photo-card__wrapper-author">
-                <span class="photo-card__author-key">Автор фото:</span>
-                <span class="photo-card__author-value">Петр</span>
+          <div class="photo-list__item-wrapper">
+            <div class="photo-card__image photo-card__image--3"><span class="visually-hidden">Фото 3</span></div>
+            <!--<img class="photo-card__image" src="./img/photo-3-desktop.jpg.jpg" alt="Фото 3">-->
+            <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
+              <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
+                <strong class="photo-card__name">Дорога на север</strong>
+                <div class="photo-card__wrapper-author">
+                  <span class="photo-card__author-key">Автор фото:</span>
+                  <span class="photo-card__author-value">Петр</span>
+                </div>
               </div>
+              <span class="photo-card__likes photo-card__likes--desktop">96</span>
             </div>
-            <span class="photo-card__likes photo-card__likes--desktop">96</span>
           </div>
         </li>
         <li class="photo-list__item photo-card">
-          <div class="photo-card__image photo-card__image--4"><span class="visually-hidden">Фото 4</span></div>
-          <!--<img class="photo-card__image" src="./img/photo-4-desktop.jpg.jpg" alt="Фото 4">-->
-          <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
-            <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
-              <strong class="photo-card__name">Мост Дьявола</strong>
-              <div class="photo-card__wrapper-author">
-                <span class="photo-card__author-key">Автор фото:</span>
-                <span class="photo-card__author-value">Антон</span>
+          <div class="photo-list__item-wrapper">
+            <div class="photo-card__image photo-card__image--4"><span class="visually-hidden">Фото 4</span></div>
+            <!--<img class="photo-card__image" src="./img/photo-4-desktop.jpg.jpg" alt="Фото 4">-->
+            <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
+              <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
+                <strong class="photo-card__name">Мост Дьявола</strong>
+                <div class="photo-card__wrapper-author">
+                  <span class="photo-card__author-key">Автор фото:</span>
+                  <span class="photo-card__author-value">Антон</span>
+                </div>
               </div>
+              <span class="photo-card__likes photo-card__likes--desktop">254</span>
             </div>
-            <span class="photo-card__likes photo-card__likes--desktop">254</span>
           </div>
         </li>
       </ul>
@@ -119,8 +130,8 @@
 
     <section class="info-block">
       <div class="info-block__wrapper info-block__wrapper--catalog-videopresentation">
-        <h2 class="info-block__header info-block__header--mobile font-header font-header__secondary">Все еще сомневаетесь?</h2>
-        <p class="info-block__cover info-block__cover-mobile font-paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <h2 class="info-block__header info-block__header--big info-block__header--mobile font-header font-header__secondary">Все еще сомневаетесь?</h2>
+        <p class="info-block__cover info-block__cover--mobile font-paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
     </section>
 

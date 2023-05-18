@@ -36,8 +36,11 @@
           </a>
         </li>
       </ul>
-      <button class="main-navigation__toggle" type="button">
+      <button class="main-navigation__toggle-open" type="button">
         <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <button class="main-navigation__toggle-close" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
     </nav>
   </header>
@@ -51,7 +54,7 @@
     <section class="info-block">
       <div class="info-block__wrapper info-block__wrapper--review">
         <h2 class="info-block__header info-block__header--review info-block__header--big font-header">Оставьте свой отзыв</h2>
-        <p class="info-block__cover font-paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, <nobr>а также</nobr> о посещенных вами достопримечательностях</p>
+        <p class="info-block__cover info-block__cover--review font-paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, <nobr>а также</nobr> о посещенных вами достопримечательностях</p>
       </div>
     </section>
 
@@ -59,7 +62,7 @@
       <h2 class="visually-hidden">Форма отзыва</h2>
       <form class="form-revocation" action="https://echo.htmlacademy.ru/" method="post">
         <div class="form-revocation__wrapper">
-          <fieldset class="form-revocation__item form-revocation__item--represent form-block">
+          <fieldset class="form-revocation__item form-revocation__item--represent form-block__represent form-block__bottom--represent">
             <legend class="form-block__legend font-header">Представьтесь:</legend>
             <div class="form-block__wrapper">
               <label class="form-block__field-name form-field" for="name">
@@ -78,14 +81,14 @@
           </fieldset>
         </div>
 
-        <fieldset class="form-revocation__item form-revocation__item--contact form-block">
-          <legend class="form-block__legend font-header">Контактная информация:</legend>
+        <fieldset class="form-revocation__item form-revocation__item--contact form-block form-block__bottom--contact">
+          <legend class="form-block__legend form-block__legend--contact font-header">Контактная информация:</legend>
           <div class="form-block__wrapper">
             <label class="form-block__field-name form-field" for="tel">
               <span class="form-field__label">Контактный телефон*:</span>
               <div class="form-block__field-wrapper">
-                <input class="form-block__input" type="tel" name="tel" placeholder="Введите телефон">
-                <button class="form-field__button">
+                <input class="form-block__input form-block__input--contact" type="tel" name="tel" placeholder="Введите телефон">
+                <button class="form-field__button form-field__button--phone">
                   <span class="visually-hidden">Телефон</span>
                 </button>
               </div>
@@ -93,8 +96,8 @@
             <label class="form-block__field-name form-field" for="email">
               <span class="form-field__label">Электронная почта*:</span>
               <div class="form-block__field-wrapper">
-                <input class="form-block__input" type="email" name="email" placeholder="Введите e-mail">
-                <button class="form-field__button">
+                <input class="form-block__input form-block__input--contact" type="email" name="email" placeholder="Введите e-mail">
+                <button class="form-field__button form-field__button--mail">
                   <span class="visually-hidden">E-mail</span>
                 </button>
               </div>
@@ -102,69 +105,76 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-revocation__item--individual form-block">
+        <fieldset class="form-revocation__item--individual form-block form-block__bottom--impression">
           <legend class="form-block__legend form-block__legend--impression font-header">Ваше общее впечатление:</legend>
           <ul class="impression-list">
             <li class="impression-list__item">
               <label class="form-radio-button">
-                <input class="form-radio-button__item" type="radio" name="impression" value="positive" checked>
+                <input class="form-radio-button__item visually-hidden" type="radio" name="impression" value="positive" checked>
+                <span class="form-radio-button__mark"></span>
                 <span class="form-radio-button__label">Скорее положительное</span>
               </label>
             </li>
             <li class="impression-list__item">
               <label class="form-radio-button">
-                <input class="form-radio-button__item" type="radio" name="impression" value="negative">
+                <input class="form-radio-button__item visually-hidden" type="radio" name="impression" value="negative">
+                <span class="form-radio-button__mark"></span>
                 <span class="form-radio-button__label">Скорее отрицаельное</span>
               </label>
             </li>
             <li class="impression-list__item">
               <label class="form-radio-button">
-                <input class="form-radio-button__item" type="radio" name="impression" value="difficult">
+                <input class="form-radio-button__item visually-hidden" type="radio" name="impression" value="difficult">
+                <span class="form-radio-button__mark"></span>
                 <span class="form-radio-button__label">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="form-revocation__item--individual form-block">
+        <fieldset class="form-revocation__item--individual form-block form-block__bottom--visit">
           <legend class="form-block__legend form-block__legend--visit font-header">Посещенные<br> достопримечательности:</legend>
           <ul class="attractions-list">
             <li class="attractions-list__item">
               <label class="form-checkbox" for="devil-bridge">
-                <input class="form-checkbox__item" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+                <input class="form-checkbox__item visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+                <span class="form-checkbox__mark"></span>
                 <span class="form-checkbox__label">Мост Дьявола</span>
               </label>
             </li>
             <li class="attractions-list__item">
               <label class="form-checkbox" for="bell-mountain">
-                <input class="form-checkbox__item" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
+                <input class="form-checkbox__item visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
+                <span class="form-checkbox__mark"></span>
                 <span class="form-checkbox__label">Гора-Колокол</span>
               </label>
             </li>
             <li class="attractions-list__item">
               <label class="form-checkbox" for="slide-park">
-                <input class="form-checkbox__item" type="checkbox" name="slide-park" id="slide-park" checked>
+                <input class="form-checkbox__item visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
+                <span class="form-checkbox__mark"></span>
                 <span class="form-checkbox__label">Слайд-парк</span>
               </label>
             </li>
             <li class="attractions-list__item">
               <label class="form-checkbox" for="red-rocks">
-                <input class="form-checkbox__item" type="checkbox" name="red-rocks" id="red-rocks">
+                <input class="form-checkbox__item visually-hidden" type="checkbox" name="red-rocks" id="red-rocks">
+                <span class="form-checkbox__mark"></span>
                 <span class="form-checkbox__label">Красные скалы</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="form-revocation__item--individual form-block">
-          <legend class="form-block__legend font-header">Опишите свои эмоции:</legend>
+        <fieldset class="form-revocation__item--individual form-block form-block__bottom--emotions">
+          <legend class="form-block__legend form-block__legend--emotions font-header">Опишите свои эмоции:</legend>
           <label class="visually-hidden" for="emotions">Опишите эмоции</label>
 
           <div class="form-revocation__wrapper-textarea">
             <textarea class="form-block__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
               <div class="form-revocation__wrapper-button">
                 <button class="form-revocation__button font-header" type="button">Отправить отзыв</button>
-                <p class="font-paragraph">*-обязательные поля</p>
+                <p class="form-revocation__mark font-paragraph">*-обязательные поля</p>
               </div>
           </div>
 

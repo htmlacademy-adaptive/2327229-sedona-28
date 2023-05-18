@@ -17,6 +17,10 @@
   font-size: 18px;
 }
 
+.attractions-list__item:not(:first-child) {
+  margin-top: 26px;
+}
+
 @media (min-width: @tablet-width) {
   .attractions-list {
     flex-direction: row;
@@ -31,11 +35,34 @@
     &:first-child {
       margin-bottom: 16px;
     }
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+
+    &:nth-child(3) {
+      margin-top: 16px;
+    }
+
+    &:nth-child(4) {
+      margin-top: 16px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .attractions-list {
     width: 854px;
+    margin-bottom: 87px;
+  }
+
+  .attractions-list__item {
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+
+    &:nth-child(4) {
+      margin-top: 0;
+    }
   }
 }

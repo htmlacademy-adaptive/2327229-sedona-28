@@ -18,12 +18,13 @@
 @import "./blocks/form-radio-button.less";
 @import "./blocks/attractions-list.less";
 @import "./blocks/photo-gallery.less";
+@import "./blocks/form-checkbox.less";
 
 @font-face {
   font-family: "PT-Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -31,7 +32,7 @@
   font-family: "PT-Sans";
   font-style: bold;
   font-weight: 700;
-  src: url("../../fonts/ptsansbold.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -96,4 +97,11 @@ body {
 
 .font-paragraph__secondary {
   font-size: @font-size-paragraph-mobile;
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

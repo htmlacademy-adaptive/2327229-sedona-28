@@ -1,5 +1,5 @@
 .info-block {
-  //
+  position: relative;
 }
 
 .info-block__catalog {
@@ -12,20 +12,61 @@
 
   &--slogan {
     padding: 0 10px;
-    margin: 52px auto 51px;
+    margin: 32px auto 16px;
+  }
+
+  &--slogan::before {
+    content: url("../img/intro-triangle.svg");
+    position: absolute;
+    top: -89px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &--slogan::after {
+    content: url("../img/white-copy.svg");
+    position: absolute;
+    top: 169px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
   &--interesting {
-    margin: 60px auto 44px;
+    margin: 38px auto 32px;
   }
 
   &--catalog {
     margin: 37px auto 25px;
   }
 
+  &--catalog::before {
+    content: url("../img/intro-triangle.svg");
+    position: absolute;
+    top: -94px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
   &--review {
+    width: 100%;
     padding: 36px 0 28px;
-    margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &--review::before {
+    content: url("../img/intro-triangle.svg");
+    position: absolute;
+    top: -56px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
   &--catalog-videopresentation {
@@ -38,11 +79,24 @@
 
   &--review {
     width: 280px;
+    margin: 0 auto 35px;
+  }
+
+  &--medium {
+    font-size: 21px;
   }
 }
 
 .info-block__cover {
-  margin: 0;
+  margin: 0 auto;
+
+  &--mobile {
+    width: 260px;
+  }
+
+  &--review {
+    width: 280px;
+  }
 }
 
 .info-block__button-search {
@@ -53,7 +107,7 @@
   width: 284px;
   padding: 16px 0;
   margin: 0 auto;
-  margin-bottom: 55px;
+  margin-bottom: 49px;
 }
 
 @media (min-width: @tablet-width) {
@@ -65,6 +119,20 @@
       margin: 48px auto 55px;
     }
 
+    &--slogan::before {
+      content: url("../img/intro-triangle.svg");
+      position: absolute;
+      top: -105px;
+      left: 0;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+
+    &--slogan::after {
+      display: none;
+    }
+
     &--interesting {
       width: 435px;
       margin: 60px auto 44px;
@@ -74,14 +142,30 @@
       margin: 66px auto 67px;
     }
 
+    &--catalog::before {
+      content: url("../img/intro-triangle.svg");
+      position: absolute;
+      top: -123px;
+      left: 0;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+
     &--catalog-videopresentation {
       margin: 58px auto 66px;
     }
 
     &--review {
       width: 435px;
-      margin-bottom: 84px;
+      margin: 0 auto;
+      margin-bottom: 100px;
       padding: 64px 0 0;
+      border: none;
+    }
+
+    &--review::before {
+      top: -56px;
     }
   }
 
@@ -90,14 +174,8 @@
   }
 
   .info-block__header.info-block__header {
-    //
-
     &--big {
       font-size: 30px;
-    }
-
-    &--mobile {
-      font-size: 21px;
     }
 
     &--review {
@@ -108,6 +186,8 @@
 
   .info-block__cover {
     font-size: 21px;
+    width: 445px;
+    margin: 0 auto;
 
     &-mobile {
       font-size: 18px;
@@ -128,10 +208,31 @@
       margin: 59px auto 44px;
     }
 
+    &--slogan::before {
+      top: -116px;
+    }
+
+    &--catalog {
+      margin: 100px auto 65px;
+    }
+
+    &--catalog::before {
+      top: -157px;
+    }
+
     &--review {
       width: 435px;
-      margin-bottom: 84px;
-      padding: 64px 0 0;
+      margin-bottom: 60px;
+      padding: 115px 0 0;
     }
+
+    &--review::before {
+      top: -57px;
+    }
+  }
+
+  .info-block__cover {
+    width: 445px;
+    margin: 0 auto;
   }
 }

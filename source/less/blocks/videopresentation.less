@@ -5,26 +5,43 @@
 .videopresentation__preview {
   display: block;
   margin: 0 auto;
-  background-image: url("../../img/video-mobile.jpg");
+  background-image: url("../img/video-mobile.jpg");
   height: 177px;
   width: 280px;
   background-repeat: no-repeat;
 }
 
+.videopresentation__preview::before {
+  content: url("../img/video-play.svg");
+  position: relative;
+  top: 62px;
+  left: 116px;
+}
+
 @media (min-width: @tablet-width) {
   .videopresentation__preview {
-    background-image: url("../../img/video-tablet.jpg");
+    background-image: url("../img/video-tablet.jpg");
     height: 500px;
     width: 648px;
     background-repeat: no-repeat;
+  }
+
+  .videopresentation__preview::before {
+    top: 223px;
+    left: 300px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .videopresentation__preview {
-    background-image: url("../../img/video-desktop.jpg");
+    background-image: url("../img/video-desktop.jpg");
     height: 500px;
     width: 800px;
     background-repeat: no-repeat;
+  }
+
+  .videopresentation__preview::before {
+    top: 223px;
+    left: 376px;
   }
 }
