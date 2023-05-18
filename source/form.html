@@ -52,7 +52,11 @@
   <main class="main-container">
     <section class="main-banner main-banner__inner-page">
       <h1 class="visually-hidden">Город Седона</h1>
-      <div class="main-banner__title main-banner__title--secondary"><span class="visually-hidden">Седона</span></div>
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/sedona-desktop.svg" width="480px" height="80px">
+        <img class="main-banner__title main-banner__title--secondary" src="img/sedona_mobile.svg" width="290px" height="50px" alt="Седона">
+      </picture>
+      <!--<div class="main-banner__title main-banner__title--secondary"><span class="visually-hidden">Седона</span></div>-->
     </section>
 
     <section class="info-block info-block__form">
