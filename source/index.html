@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="js/app.js"></script>
   <title>Sedona</title>
 </head>
 <body class="page__body">
@@ -13,33 +19,35 @@
       <a class="main-header__logo" href="#">
         <img class="main-header__logo-img" src="img/logo.svg" alt="Город Седона">
       </a>
-      <ul class="main-navigation__list main-navigation__list--open site-list">
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--active">
-            <p class="site-list__link-text">Главная</p>
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">
-            <p class="site-list__link-text">Фото и видео</p>
-          </a>
-        </li>
-        <li class="site-list__empty"></li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">
-            <p class="site-list__link-text">Форма отзыва</p>
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">
-            <p class="site-list__link-text">HTML ACADEMY</p>
-          </a>
-        </li>
-      </ul>
+      <div class="site-list__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">
+              <p class="site-list__link-text">Главная</p>
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">
+              <p class="site-list__link-text">Фото и видео</p>
+            </a>
+          </li>
+          <li class="site-list__empty"></li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">
+              <p class="site-list__link-text">Форма отзыва</p>
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">
+              <p class="site-list__link-text">HTML ACADEMY</p>
+            </a>
+          </li>
+        </ul>
+      </div>
       <button class="main-navigation__toggle-open" id="button-open-menu" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <button class="main-navigation__toggle-close" type="button">
+      <button class="main-navigation__toggle-close main-navigation__toggle-close--none" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
     </nav>
@@ -49,10 +57,14 @@
 
     <section class="main-banner">
       <h1 class="visually-hidden">Город Седона</h1>
-      <div class="main-banner__title"><span class="visually-hidden">Добро пожаловать в Седону</span></div>
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/banner-desktop.svg" width="461px" height="350px">
+        <img class="main-banner__title" src="img/banner-mobile.svg" width="282px" height="214px" alt="Добро пожаловать в Седону">
+      </picture>
+      <!--<div class="main-banner__title"><span class="visually-hidden">Добро пожаловать в Седону</span></div>-->
     </section>
 
-    <section class="info-block">
+    <section class="info-block info-block__mark">
       <div class="info-block__wrapper info-block__wrapper--slogan">
         <h2 class="info-block__header font-header font-header__secondary">Седона - небольшой <nobr>городок в Аризоне,</nobr> <nobr>заслуживающий большего!</nobr></h2>
         <p class="info-block__cover font-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>

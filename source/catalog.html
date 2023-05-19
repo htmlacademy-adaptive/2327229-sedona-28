@@ -5,6 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="js/app.js"></script>
   <title>Фото и видео</title>
 </head>
 <body class="page__body">
@@ -13,33 +19,35 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-img" src="img/logo.svg" alt="Город Седона">
       </a>
-      <ul class="main-navigation__list main-navigation__list--open site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="index.html">
-            <p class="site-list__link-text">Главная</p>
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--active">
-            <p class="site-list__link-text">Фото и видео</p>
-          </a>
-        </li>
-        <li class="site-list__empty"></li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">
-            <p class="site-list__link-text">Форма отзыва</p>
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">
-            <p class="site-list__link-text">HTML ACADEMY</p>
-          </a>
-        </li>
-      </ul>
+      <div class="site-list__wrapper">
+        <ul class="main-navigation__list main-navigation__list--open site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">
+              <p class="site-list__link-text">Главная</p>
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">
+              <p class="site-list__link-text">Фото и видео</p>
+            </a>
+          </li>
+          <li class="site-list__empty"></li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">
+              <p class="site-list__link-text">Форма отзыва</p>
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">
+              <p class="site-list__link-text">HTML ACADEMY</p>
+            </a>
+          </li>
+        </ul>
+      </div>
       <button class="main-navigation__toggle-open" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <button class="main-navigation__toggle-close" type="button">
+      <button class="main-navigation__toggle-close main-navigation__toggle-close--none" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
     </nav>
@@ -48,7 +56,11 @@
   <main class="main-container">
     <section class="main-banner main-banner__inner-page">
       <h1 class="visually-hidden">Город Седона</h1>
-      <div class="main-banner__title main-banner__title--secondary"><span class="visually-hidden">Седона</span></div>
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/sedona-desktop.svg" width="480px" height="80px">
+        <img class="main-banner__title main-banner__title--secondary" src="img/sedona_mobile.svg" width="290px" height="50px" alt="Седона">
+      </picture>
+      <!--<div class="main-banner__title main-banner__title--secondary"><span class="visually-hidden">Седона</span></div>-->
     </section>
 
     <section class="info-block info-block__catalog">
@@ -63,8 +75,12 @@
       <ul class="photo-list photo-list__wrapper">
         <li class="photo-list__item photo-list__item--premier-desktop photo-card__premier-desktop">
           <div class="photo-list__item-wrapper">
-            <div class="photo-card__image photo-card__image--1"><span class="visually-hidden">Фото 1</span></div>
-            <!--<img class="photo-card__image" src="./img/photo-1-desktop.jpg.jpg" alt="Фото 1">-->
+            <!--<div class="photo-card__image photo-card__image--1"><span class="visually-hidden">Фото 1</span></div>-->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg, img/photo-1-desktop.jpg@2x.jpg 2x" width="1200px" height="400px">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" width="648px" height="400px">
+              <img class="photo-card__image" src="./img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280px" height="280px" alt="Фото 1">
+            </picture>
             <div class="photo-card__signature photo-card__signature--premier photo-card__signature--desktop">
               <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
                 <strong class="photo-card__name">Неродные просторы</strong>
@@ -79,8 +95,12 @@
         </li>
         <li class="photo-list__item photo-list__item--second-desktop photo-card">
           <div class="photo-list__item-wrapper">
-            <div class="photo-card__image photo-card__image--2"><span class="visually-hidden">Фото 2</span></div>
-            <!--<img class="photo-card__image" src="./img/photo-2-desktop.jpg.jpg" alt="Фото 2">-->
+            <!--<div class="photo-card__image photo-card__image--2"><span class="visually-hidden">Фото 2</span></div>-->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop.jpg@2x.jpg 2x" width="400px" height="267px">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet@2x.jpg 2x" width="324px" height="267px">
+              <img class="photo-card__image" src="./img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280px" height="280px" alt="Фото 2">
+            </picture>
             <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
               <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
                 <strong class="photo-card__name">Местная растительность</strong>
@@ -95,8 +115,12 @@
         </li>
         <li class="photo-list__item photo-card">
           <div class="photo-list__item-wrapper">
-            <div class="photo-card__image photo-card__image--3"><span class="visually-hidden">Фото 3</span></div>
-            <!--<img class="photo-card__image" src="./img/photo-3-desktop.jpg.jpg" alt="Фото 3">-->
+            <!--<div class="photo-card__image photo-card__image--3"><span class="visually-hidden">Фото 3</span></div>-->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop.jpg@2x.jpg 2x" width="400px" height="267px">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2x.jpg 2x" width="324px" height="267px">
+              <img class="photo-card__image" src="./img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280px" height="280px" alt="Фото 3">
+            </picture>
             <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
               <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
                 <strong class="photo-card__name">Дорога на север</strong>
@@ -111,8 +135,12 @@
         </li>
         <li class="photo-list__item photo-card">
           <div class="photo-list__item-wrapper">
-            <div class="photo-card__image photo-card__image--4"><span class="visually-hidden">Фото 4</span></div>
-            <!--<img class="photo-card__image" src="./img/photo-4-desktop.jpg.jpg" alt="Фото 4">-->
+            <!--<div class="photo-card__image photo-card__image--4"><span class="visually-hidden">Фото 4</span></div>-->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg, img/photo-4-desktop.jpg@2x.jpg 2x" width="400px" height="267px">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg, img/photo-4-tablet@2x.jpg 2x" width="324px" height="267px">
+              <img class="photo-card__image" src="./img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280px" height="280px" alt="Фото 4">
+            </picture>
             <div class="photo-card__signature photo-card__signature--second photo-card__signature--desktop">
               <div class="photo-card__wrapper-name photo-card__wrapper-name--desktop">
                 <strong class="photo-card__name">Мост Дьявола</strong>
@@ -137,7 +165,13 @@
 
     <section class="videopresentation">
       <h2 class="visually-hidden">Видеопрезентация городка Седона</h2>
-      <div class="videopresentation__preview"><span class="visually-hidden">Превью видео</span></div>
+      <span class="videopresentation__play-mark"></span>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg, img/video-desktop.jpg@2x.jpg 2x" width="800px" height="500px">
+        <source media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet@2x.jpg 2x" width="648px" height="500px">
+        <img class="videopresentation__preview" src="img/video-mobile.jpg" srcset="img/video-mobile.jpg@2x.jpg" width="280px" height="177px" alt="Фото 4">
+      </picture>
+      <!--<div class="videopresentation__preview"><span class="visually-hidden">Превью видео</span></div>-->
     </section>
 
   </main>

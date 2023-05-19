@@ -5,6 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="js/app.js"></script>
   <title>Форма отзыва</title>
 </head>
 <body class="page__body">
@@ -13,33 +19,35 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-img" src="img/logo.svg" alt="Город Седона">
       </a>
-      <ul class="main-navigation__list main-navigation__list--open site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="index.html">
-            <p class="site-list__link-text">Главная</p>
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">
-            <p class="site-list__link-text">Фото и видео</p>
-          </a>
-        </li>
-        <li class="site-list__empty"></li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--active">
-            <p class="site-list__link-text">Форма отзыва</p>
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">
-            <p class="site-list__link-text">HTML ACADEMY</p>
-          </a>
-        </li>
-      </ul>
+      <div class="site-list__wrapper">
+        <ul class="main-navigation__list main-navigation__list--open site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">
+              <p class="site-list__link-text">Главная</p>
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">
+              <p class="site-list__link-text">Фото и видео</p>
+            </a>
+          </li>
+          <li class="site-list__empty"></li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">
+              <p class="site-list__link-text">Форма отзыва</p>
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">
+              <p class="site-list__link-text">HTML ACADEMY</p>
+            </a>
+          </li>
+        </ul>
+      </div>
       <button class="main-navigation__toggle-open" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <button class="main-navigation__toggle-close" type="button">
+      <button class="main-navigation__toggle-close main-navigation__toggle-close--none" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
     </nav>
@@ -48,10 +56,14 @@
   <main class="main-container">
     <section class="main-banner main-banner__inner-page">
       <h1 class="visually-hidden">Город Седона</h1>
-      <div class="main-banner__title main-banner__title--secondary"><span class="visually-hidden">Седона</span></div>
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/sedona-desktop.svg" width="480px" height="80px">
+        <img class="main-banner__title main-banner__title--secondary" src="img/sedona_mobile.svg" width="290px" height="50px" alt="Седона">
+      </picture>
+      <!--<div class="main-banner__title main-banner__title--secondary"><span class="visually-hidden">Седона</span></div>-->
     </section>
 
-    <section class="info-block">
+    <section class="info-block info-block__form">
       <div class="info-block__wrapper info-block__wrapper--review">
         <h2 class="info-block__header info-block__header--review info-block__header--big font-header">Оставьте свой отзыв</h2>
         <p class="info-block__cover info-block__cover--review font-paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, <nobr>а также</nobr> о посещенных вами достопримечательностях</p>
