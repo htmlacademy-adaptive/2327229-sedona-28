@@ -21,6 +21,18 @@
   margin-top: 26px;
 }
 
+.attractions-list__item:hover .form-checkbox__mark {
+  background-color: #e5e5e5;
+}
+
+.attractions-list__item:active .form-checkbox__mark {
+  background-color: #d5d5d5;
+}
+
+.attractions-list__item:active .form-checkbox__mark::after {
+  opacity: 30%;
+}
+
 @media (min-width: @tablet-width) {
   .attractions-list {
     flex-direction: row;

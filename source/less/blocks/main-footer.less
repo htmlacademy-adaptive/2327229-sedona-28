@@ -1,7 +1,3 @@
-.main-footer {
-  //
-}
-
 .main-footer__wrapper {
   padding: 36px 60px;
   display: flex;
@@ -21,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  text-decoration: none;
 }
 
 .main-footer__copyright-text.main-footer__copyright-text {
@@ -29,15 +26,27 @@
   margin-right: 10px;
   text-align: start;
   width: 89px;
+  color: #000000;
 }
 
-.main-footer__copyright-logo {
-  width: 37px;
-  height: 44px;
+.main-footer__copyright-logo path {
+  fill: #000000;
+}
 
-  & path {
-    fill: #000000;
-  }
+.main-footer__copyright:hover .main-footer__copyright-logo path {
+  fill: #81b3d2;
+}
+
+.main-footer__copyright:hover .main-footer__copyright-text {
+  color: #81b3d2;
+}
+
+.main-footer__copyright:active .main-footer__copyright-logo path {
+  fill: #b3b3b3;
+}
+
+.main-footer__copyright:active .main-footer__copyright-text {
+  color: #b3b3b3;
 }
 
 @media (min-width: @tablet-width) {

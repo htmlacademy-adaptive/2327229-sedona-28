@@ -82,6 +82,11 @@
   width: 248px;
   height: 26px;
 
+  font-family: @main-font;
+  font-style: bold;
+  font-weight: 700;
+  font-size: @font-size-header-mobile;
+
   &--contact {
     width: 190px;
   }
@@ -93,6 +98,22 @@
     font-size: 18px;
     opacity: 30%;
   }
+}
+
+.form-block__input:hover {
+  background-color: #e5e5e5;
+}
+
+.form-block__input:active {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
+}
+
+.form-block__input--contact:active {
+  height: 18px;
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
+  margin-top: 4px;
 }
 
 .form-block__textarea {
