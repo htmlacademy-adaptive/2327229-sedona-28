@@ -16,6 +16,18 @@
   }
 }
 
+.impression-list__item:hover .form-radio-button__mark {
+  background-color: #e5e5e5;
+}
+
+.impression-list__item:active .form-radio-button__mark {
+  background-color: #d5d5d5;
+}
+
+.impression-list__item:active .form-radio-button__mark::after {
+  opacity: 30%;
+}
+
 @media (min-width: @tablet-width) {
   .impression-list {
     flex-direction: row;

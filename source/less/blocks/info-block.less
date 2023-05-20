@@ -111,6 +111,28 @@
   padding: 16px 0;
   margin: 0 auto;
   margin-bottom: 49px;
+  text-decoration: none;
+}
+
+.info-block__button-text {
+  display: block;
+  height: 26px;
+}
+
+.info-block__button-search:hover {
+  background-color: #669ec0;
+}
+
+.info-block__button-search:active {
+  background-color: #5496bd;
+}
+
+.info-block__button-search:active .info-block__button-text {
+  opacity: 30%;
+}
+
+.info-block__button-search:disabled {
+  background-color: #e5e5e5;
 }
 
 @media (min-width: @tablet-width) {
