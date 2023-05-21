@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -34,9 +34,9 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-img" width="185px" height="96px" src="img/logo.svg" alt="Город Седона">
+        <img class="main-header__logo-img" width="185" height="96" src="img/logo.svg" alt="Город Седона">
       </a>
-      <div class="site-list__wrapper">
+      <div class="site-list__wrapper site-list__wrapper--open">
         <ul class="main-navigation__list main-navigation__list--open site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">
@@ -74,16 +74,15 @@
     <section class="main-banner main-banner__inner-page">
       <h1 class="visually-hidden">Город Седона</h1>
       <picture>
-        <source media="(min-width: 768px)" srcset="img/sedona-desktop.svg" width="480px" height="80px">
-        <img class="main-banner__title main-banner__title--secondary" src="img/sedona_mobile.svg" width="290px" height="50px" alt="Седона">
+        <source media="(min-width: 768px)" srcset="img/sedona-desktop.svg" width="480" height="80">
+        <img class="main-banner__title main-banner__title--secondary" src="img/sedona-mobile.svg" width="290" height="50" alt="Седона">
       </picture>
-      <!--<div class="main-banner__title main-banner__title--secondary"><span class="visually-hidden">Седона</span></div>-->
     </section>
 
     <section class="info-block info-block__form">
       <div class="info-block__wrapper info-block__wrapper--review">
         <h2 class="info-block__header info-block__header--review info-block__header--big font-header">Оставьте свой отзыв</h2>
-        <p class="info-block__cover info-block__cover--review font-paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, <nobr>а также</nobr> о посещенных вами достопримечательностях</p>
+        <p class="info-block__cover info-block__cover--review font-paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
       </div>
     </section>
 
@@ -96,15 +95,15 @@
             <div class="form-block__wrapper">
               <label class="form-block__field-name form-field" for="name">
                 <span class="form-field__label">Имя*:</span>
-                <input class="form-block__input" type="text" name="name" required placeholder="Введите ваше имя">
+                <input class="form-block__input" type="text" name="name" id="name" required placeholder="Введите ваше имя">
               </label>
               <label class="form-block__field-name form-field" for="last-name">
                 <span class="form-field__label">Фамилия*:</span>
-                <input class="form-block__input" type="text" name="last-name" required placeholder="Введите вашу фамилию">
+                <input class="form-block__input" type="text" name="last-name" id="last-name" required placeholder="Введите вашу фамилию">
               </label>
               <label class="form-block__field-name form-field" for="surname">
                 <span class="form-field__label">Отчество:</span>
-                <input class="form-block__input" type="text" name="surname" placeholder="Введите ваше отчество">
+                <input class="form-block__input" type="text" name="surname" id="surname" placeholder="Введите ваше отчество">
               </label>
             </div>
           </fieldset>
@@ -115,21 +114,21 @@
           <div class="form-block__wrapper">
             <label class="form-block__field-name form-field" for="tel">
               <span class="form-field__label">Контактный телефон*:</span>
-              <div class="form-block__field-wrapper">
-                <input class="form-block__input form-block__input--contact" type="tel" name="tel" required placeholder="Введите телефон">
-                <button class="form-field__button form-field__button--phone">
+              <span class="form-block__field-wrapper">
+                <input class="form-block__input form-block__input--contact" type="tel" name="tel" id="tel" required placeholder="Введите телефон">
+                <span class="form-field__icon form-field__icon--phone">
                   <span class="visually-hidden">Телефон</span>
-                </button>
-              </div>
+                </span>
+              </span>
             </label>
             <label class="form-block__field-name form-field" for="email">
               <span class="form-field__label">Электронная почта*:</span>
-              <div class="form-block__field-wrapper">
-                <input class="form-block__input form-block__input--contact" type="email" name="email" required placeholder="Введите e-mail">
-                <button class="form-field__button form-field__button--mail">
+              <span class="form-block__field-wrapper">
+                <input class="form-block__input form-block__input--contact" type="email" name="email" id="email" required placeholder="Введите e-mail">
+                <span class="form-field__icon form-field__icon--mail">
                   <span class="visually-hidden">E-mail</span>
-                </button>
-              </div>
+                </span>
+              </span>
             </label>
           </div>
         </fieldset>
@@ -217,31 +216,37 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__logo">
-        <img src="img/visitsedona.svg" width="136px" height="26px" alt="VISITSEDONA">
+        <img src="img/visitsedona.svg" width="136" height="26" alt="VISITSEDONA">
       </div>
       <ul class="main-footer__social social-list">
         <li class="social-list__item">
-          <span class="visually-hidden">Вконтакте</span>
-          <svg class="social-list__image" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
-            <use xlink:href="#icon-wk"></use>
-          </svg>
+          <a class="social-list__link">
+            <span class="visually-hidden">Вконтакте</span>
+            <svg class="social-list__image" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+              <use xlink:href="#icon-wk"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item">
-          <span class="visually-hidden">Telegram</span>
-          <svg class="social-list__image" aria-labelledby="telegram" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
-            <use xlink:href="#icon-telegram"></use>
-          </svg>
+          <a class="social-list__link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+            <svg class="social-list__image" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+              <use xlink:href="#icon-telegram"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item">
-          <span class="visually-hidden">YouTube</span>
-          <svg class="social-list__image" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
-            <use xlink:href="#icon-youtube"></use>
-          </svg>
+          <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">YouTube</span>
+            <svg class="social-list__image" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+              <use xlink:href="#icon-youtube"></use>
+            </svg>
+          </a>
         </li>
       </ul>
       <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="main-footer__copyright-text font-paragraph">Разработано</span>
-        <svg class="main-footer__copyright-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false">
+        <svg class="main-footer__copyright-logo" width="37" height="44" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false">
           <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
         </svg>
       </a>
