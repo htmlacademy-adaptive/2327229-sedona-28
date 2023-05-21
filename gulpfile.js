@@ -29,7 +29,7 @@ export const styles = () => {
 }
 
 //HTML
-const html = () => {
+export const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest('build'));
@@ -42,13 +42,13 @@ export const optimizeImages = () => {
   .pipe(gulp.dest('build/img'))
 }
 
-const copyImages = () => {
+export const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(gulp.dest('build/img'))
 }
 
 //WebP
-const createWebp = () => {
+export const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh({
     webp: {}
@@ -57,13 +57,13 @@ const createWebp = () => {
 }
 
 //SVG
-const svg = () => {
+export const svg = () => {
   return gulp.src('source/img/*.svg')
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 }
 
-const sprite = () => {
+export const sprite = () => {
   return gulp.src(['source/img/icons/*.svg, !source/img/icons/*.svg'])
   .pipe(svgo())
   .pipe(svgstore({
@@ -74,7 +74,7 @@ const sprite = () => {
 }
 
 //copy
-const copy = (done) => {
+export const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*ico',
@@ -130,7 +130,7 @@ export const build = gulp.series(
     svg,
     sprite,
     createWebp
-  ),
+  )
 );
 
 export default gulp.series(
