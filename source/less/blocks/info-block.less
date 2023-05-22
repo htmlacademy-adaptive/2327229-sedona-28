@@ -40,7 +40,6 @@
 }
 
 .info-block__wrapper {
-  //max-width: 458px;
   width: 284px;
 
   &--slogan {
@@ -49,13 +48,15 @@
   }
 
   &--slogan::after {
-    content: url("../img/white-copy.svg");
+    content: " ";
+    display: block;
     position: absolute;
+    background-image: url("../img/white-copy.svg");
+    background-position: 50%;
     top: 169px;
     left: 0;
-    display: flex;
     width: 100%;
-    justify-content: center;
+    height: 37px;
   }
 
   &--interesting {
