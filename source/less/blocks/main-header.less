@@ -1,11 +1,5 @@
-.main-header {
-  height: 56px;
-}
-
 .main-header__logo {
   display: block;
-  width: 185px;
-  height: 56px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -14,4 +8,15 @@
 .main-header__logo-img {
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    height: 56px;
+  }
+
+  .main-header__logo {
+    width: 185px;
+    height: 56px;
+  }
 }

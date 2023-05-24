@@ -3,10 +3,6 @@
   position: relative;
 }
 
-.photo-card__image {
-  display: block;
-}
-
 .photo-card__wrapper-name {
   padding: 15px 0 11px;
 }
@@ -83,6 +79,14 @@
       width: 284px;
     }
   }
+
+  .photo-card:nth-child(2n+1) .photo-card__signature {
+    background-color: #eaeaea;
+  }
+
+  .photo-card:first-child .photo-card__signature {
+    background-color: #f2f2f2;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -105,6 +109,10 @@
 
   .photo-card__likes::before {
     content: url("../img/like-icon-desktop.svg");
+  }
+
+  .photo-card:nth-child(2n+1) .photo-card__signature {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .photo-card__signature {

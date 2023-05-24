@@ -9,8 +9,6 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="js/app.js"></script>
   <title>Форма отзыва</title>
 </head>
 <body class="page__body">
@@ -36,7 +34,7 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-img" width="185" height="96" src="img/logo.svg" alt="Город Седона">
       </a>
-      <div class="site-list__wrapper"> <!-- site-list__wrapper--open -->
+      <div class="main-navigation__wrapper"> <!-- main-navigation__wrapper--close  -  меню закрыто -->
         <ul class="main-navigation__list main-navigation__list--open site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">
@@ -61,9 +59,12 @@
           </li>
         </ul>
       </div>
-      <button class="main-navigation__toggle main-navigation__toggle--open" id="button-open-menu" type="button" aria-label="Открыть/закрыть меню">
-        <span class="visually-hidden">Открыть/закрыть меню</span>
+      <button class="main-navigation__toggle main-navigation__toggle--open main-navigation__toggle--visually-hidden" id="button-open-menu" type="button" aria-label="Открыть/закрыть меню">
+      <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
+      <!-- main-navigation__toggle--visually-hidden   -   скрывает кнопку -->
+      <!-- main-navigation__toggle--open   -   открыть меню (для открытия меню) -->
+      <!-- main-navigation__toggle--close   -   закрыть меню (для закрывания меню) -->
     </nav>
   </header>
 
@@ -87,7 +88,7 @@
       <h2 class="visually-hidden">Форма отзыва</h2>
       <form class="form-revocation" action="https://echo.htmlacademy.ru/" method="post">
         <div class="form-revocation__wrapper">
-          <fieldset class="form-revocation__item form-revocation__item--represent form-block__represent form-block__bottom--represent">
+          <fieldset class="form-revocation__item form-revocation__item--represent form-block form-block__represent form-block__bottom form-block__bottom--represent">
             <legend class="form-block__legend font-header">Представьтесь:</legend>
             <div class="form-block__wrapper">
               <label class="form-block__field-name form-field" for="name">
@@ -106,7 +107,7 @@
           </fieldset>
         </div>
 
-        <fieldset class="form-revocation__item form-revocation__item--contact form-block form-block__bottom--contact">
+        <fieldset class="form-revocation__item form-revocation__item--contact form-block form-block__bottom form-block__bottom--contact">
           <legend class="form-block__legend form-block__legend--contact font-header">Контактная информация:</legend>
           <div class="form-block__wrapper">
             <label class="form-block__field-name form-field" for="tel">
@@ -130,7 +131,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-revocation__item--individual form-block form-block__bottom--impression">
+        <fieldset class="form-revocation__item form-revocation__item--individual form-block form-block__bottom form-block__bottom--impression">
           <legend class="form-block__legend form-block__legend--impression font-header">Ваше общее впечатление:</legend>
           <ul class="impression-list">
             <li class="impression-list__item">
@@ -157,7 +158,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form-revocation__item--individual form-block form-block__bottom--visit">
+        <fieldset class="form-revocation__item form-revocation__item--individual form-block form-block__bottom form-block__bottom--visit">
           <legend class="form-block__legend form-block__legend--visit font-header">Посещенные<br> достопримечательности:</legend>
           <ul class="attractions-list">
             <li class="attractions-list__item">
@@ -191,7 +192,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form-revocation__item--individual form-block form-block__bottom--emotions">
+        <fieldset class="form-revocation__item form-revocation__item--individual form-block form-block__bottom form-block__bottom--emotions">
           <legend class="form-block__legend form-block__legend--emotions font-header">Опишите свои эмоции:</legend>
           <label class="visually-hidden" for="emotions">Опишите эмоции</label>
 

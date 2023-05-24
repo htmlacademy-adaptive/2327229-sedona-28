@@ -30,7 +30,7 @@
       <a class="main-header__logo">
         <img class="main-header__logo-img" width="185" height="96" src="img/logo.svg" alt="Город Седона">
       </a>
-      <div class="site-list__wrapper"> <!-- site-list__wrapper--open -->
+      <div class="main-navigation__wrapper"> <!-- main-navigation__wrapper--close  -  меню закрыто -->
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--active">
@@ -55,9 +55,12 @@
           </li>
         </ul>
       </div>
-      <button class="main-navigation__toggle main-navigation__toggle--open" id="button-open-menu" type="button" aria-label="Открыть/закрыть меню">
+      <button class="main-navigation__toggle main-navigation__toggle--open main-navigation__toggle--visually-hidden" id="button-open-menu" type="button" aria-label="Открыть/закрыть меню">
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
+      <!-- main-navigation__toggle--visually-hidden   -   скрывает кнопку -->
+      <!-- main-navigation__toggle--open   -   открыть меню (для открытия меню) -->
+      <!-- main-navigation__toggle--close   -   закрыть меню (для закрывания меню) -->
     </nav>
   </header>
 
@@ -100,15 +103,15 @@
       <ul class="card-condition">
         <li class="card-condition__item">
           <strong class="card-condition__text-header card-condition__text-header--house font-header">Жилье</strong>
-          <p class="card-condition__text-description"><span class="card-condition__text-description--wrapper font-paragraph font-paragraph__color-secondary">Рекомендуем пожить в настоящем мотеле, все как в кино!</span></p>
+          <p class="card-condition__text-description"><span class="card-condition__text-description card-condition__text-description--wrapper font-paragraph font-paragraph__color-secondary">Рекомендуем пожить в настоящем мотеле, все как в кино!</span></p>
         </li>
         <li class="card-condition__item">
           <strong class="card-condition__text-header card-condition__text-header--food font-header">Еда</strong>
-          <p class="card-condition__text-description"><span class="card-condition__text-description--wrapper font-paragraph font-paragraph__color-secondary">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</span></p>
+          <p class="card-condition__text-description"><span class="card-condition__text-description card-condition__text-description--wrapper font-paragraph font-paragraph__color-secondary">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</span></p>
         </li>
         <li class="card-condition__item">
           <strong class="card-condition__text-header card-condition__text-header--souvenirs font-header">Сувениры</strong>
-          <p class="card-condition__text-description card-condition__text-description--mod"><span class="card-condition__text-description--wrapper font-paragraph font-paragraph__color-secondary">Не только китайского, но&nbsp;и местного производства!</span></p>
+          <p class="card-condition__text-description"><span class="card-condition__text-description card-condition__text-description--wrapper font-paragraph font-paragraph__color-secondary">Не только китайского, но&nbsp;и местного производства!</span></p>
         </li>
       </ul>
     </section>

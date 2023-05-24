@@ -1,12 +1,7 @@
-.main-navigation {
-  height: 56px;
-  position: relative;
-}
-
-.main-navigation__list {
-  width: 100%;
-  position: relative;
-  top: 40px;
+.main-navigation__wrapper {
+  &--close {
+    display: none;
+  }
 }
 
 .main-navigation__toggle {
@@ -29,6 +24,10 @@
     z-index: 3;
     top: 15px;
   }
+
+  &--visually-hidden {
+    display: none;
+  }
 }
 
 .main-navigation__toggle:hover {
@@ -40,13 +39,24 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-navigation {
+    height: 56px;
+    position: relative;
+  }
+
   .main-navigation__list {
     width: 690px;
     margin: 0 auto;
+    position: relative;
+    top: 40px;
   }
 
   .main-navigation__toggle {
     display: none;
+  }
+
+  .main-navigation__wrapper {
+    display: block;
   }
 }
 
