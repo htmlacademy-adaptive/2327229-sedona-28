@@ -21,93 +21,10 @@
 @import "./blocks/form-checkbox.less";
 @import "./blocks/modal-error.less";
 @import "./blocks/modal-successfully.less";
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
-  font-display: swap;
-}
-
-@main-font: "PT Sans", "Arial", sans-serif;
-@main-font-size-header: 21px;
-@main-font-size-paragraph: 14px;
-@font-size-header-mobile: 18px;
-@font-size-paragraph-mobile: 18px;
-@background-block-color: #81B3D2;
-@font-color-secondary: #FFFFFF;
-@tablet-width: 768px;
-@desktop-width: 1200px;
-
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-.main-container {
-  flex-grow: 1;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.font-header {
-  font-family: @main-font;
-  font-style: bold;
-  font-weight: 700;
-  font-size: @font-size-header-mobile;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.font-header__secondary {
-  font-size: @main-font-size-header;
-}
-
-.font-paragraph {
-  font-family: @main-font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: @main-font-size-paragraph;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.font-paragraph__color-secondary {
-  color: #333333;
-}
-
-.font-paragraph__secondary {
-  font-size: @font-size-paragraph-mobile;
-}
-
-@media (min-width: @desktop-width) {
-  body {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
+@import "./blocks/font-header.less";
+@import "./blocks/font-paragraph.less";
+@import "./blocks/visually-hidden.less";
+@import "./blocks/main-container.less";
+@import "./support-files/fonts.less";
+@import "./support-files/variable.less";
+@import "./support-files/globaly-styles.less";
