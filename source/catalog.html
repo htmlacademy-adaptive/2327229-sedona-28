@@ -185,12 +185,14 @@
 
     <section class="videopresentation">
       <h2 class="visually-hidden">Видеопрезентация городка Седона</h2>
-      <span class="videopresentation__play-mark"></span>
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg, img/video-desktop.jpg@2x.jpg 2x" width="800" height="500">
-        <source media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet@2x.jpg 2x" width="648" height="500">
-        <img class="videopresentation__preview" src="img/video-mobile.jpg" srcset="img/video-mobile.jpg@2x.jpg" width="280" height="177" alt="Фото 4">
-      </picture>
+      <div class="videopresentation__wrapper">
+        <button class="videopresentation__play-button"><img src="img/video-play.svg" alt="Play"></button>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg, img/video-desktop.jpg@2x.jpg 2x" width="800" height="500">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet@2x.jpg 2x" width="648" height="500">
+          <img class="videopresentation__preview" src="img/video-mobile.jpg" srcset="img/video-mobile.jpg@2x.jpg" width="280" height="177" alt="Фото 4">
+        </picture>
+      </div>
     </section>
 
   </main>
