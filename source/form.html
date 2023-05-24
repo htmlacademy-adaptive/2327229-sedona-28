@@ -36,7 +36,7 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-img" width="185" height="96" src="img/logo.svg" alt="Город Седона">
       </a>
-      <div class="site-list__wrapper site-list__wrapper--open">
+      <div class="site-list__wrapper"> <!-- site-list__wrapper--open -->
         <ul class="main-navigation__list main-navigation__list--open site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">
@@ -61,11 +61,8 @@
           </li>
         </ul>
       </div>
-      <button class="main-navigation__toggle-open" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <button class="main-navigation__toggle-close main-navigation__toggle-close--none" type="button">
-        <span class="visually-hidden">Закрыть меню</span>
+      <button class="main-navigation__toggle main-navigation__toggle--open" id="button-open-menu" type="button" aria-label="Открыть/закрыть меню">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
     </nav>
   </header>
