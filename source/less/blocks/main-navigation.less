@@ -40,15 +40,12 @@
 
 @media (min-width: @tablet-width) {
   .main-navigation {
-    height: 56px;
+    min-height: 56px;
     position: relative;
   }
 
   .main-navigation__list {
     width: 690px;
-    margin: 0 auto;
-    position: relative;
-    top: 40px;
   }
 
   .main-navigation__toggle {
@@ -57,12 +54,13 @@
 
   .main-navigation__wrapper {
     display: block;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-navigation__list {
     width: 1038px;
-    margin: 0 auto;
+    margin: 0 71px 0 91px;
   }
 }

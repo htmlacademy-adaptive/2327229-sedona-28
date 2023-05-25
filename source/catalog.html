@@ -69,7 +69,7 @@
   </header>
 
   <main class="main-container">
-    <section class="main-banner main-banner__inner-page">
+    <section class="main-banner main-banner--inner-page">
       <h1 class="visually-hidden">Город Седона</h1>
       <picture>
         <source media="(min-width: 768px)" srcset="img/sedona-desktop.svg" width="480" height="80">
@@ -77,20 +77,23 @@
       </picture>
     </section>
 
-    <section class="info-block info-block__catalog">
+    <section class="info-block info-block--catalog">
       <div class="info-block__wrapper info-block__wrapper--catalog">
-        <h2 class="info-block__header info-block__header--big font-header font-header__secondary">Фото и видео</h2>
+        <h2 class="info-block__header info-block__header--big font-header font-header--secondary">Фото и видео</h2>
         <p class="info-block__cover font-paragraph font-paragraph__color-secondary">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
     </section>
 
     <section class="photo-gallery">
       <h2 class="visually-hidden">Фотогалерея</h2>
-      <ul class="photo-list photo-list__wrapper">
-        <li class="photo-list__item photo-list__item--premier-desktop photo-card photo-card__premier-desktop">
+      <ul class="photo-list photo-list--wrapper">
+        <li class="photo-list__item photo-list__item--premier-desktop photo-card photo-card--premier-desktop">
           <div class="photo-list__item-wrapper photo-card__wrapper">
-            <a class="photo-list__link">
+            <a class="photo-list__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop.jpg@2x.webp 2x" width="1200" height="400">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x" width="648" height="400">
+                <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg, img/photo-1-desktop.jpg@2x.jpg 2x" width="1200" height="400">
                 <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" width="648" height="400">
                 <img class="photo-list__image" src="./img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Фото 1">
@@ -110,8 +113,11 @@
         </li>
         <li class="photo-list__item photo-list__item--second-desktop photo-card">
           <div class="photo-list__item-wrapper photo-card__wrapper">
-            <a class="photo-list__link">
+            <a class="photo-list__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop.jpg@2x.webp 2x" width="400" height="267">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x" width="324" height="267">
+                <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop.jpg@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet@2x.jpg 2x" width="324" height="267">
                 <img class="photo-list__image" src="./img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Фото 2">
@@ -131,8 +137,11 @@
         </li>
         <li class="photo-list__item photo-card">
           <div class="photo-list__item-wrapper photo-card__wrapper">
-            <a class="photo-list__link">
+            <a class="photo-list__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop.jpg@2x.webp 2x" width="400" height="267">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x" width="324" height="267">
+                <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop.jpg@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2x.jpg 2x" width="324" height="267">
                 <img class="photo-list__image" src="./img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Фото 3">
@@ -152,8 +161,11 @@
         </li>
         <li class="photo-list__item photo-card">
           <div class="photo-list__item-wrapper photo-card__wrapper">
-            <a class="photo-list__link">
+            <a class="photo-list__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop.jpg@2x.webp 2x" width="400" height="267">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x" width="324" height="267">
+                <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg, img/photo-4-desktop.jpg@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg, img/photo-4-tablet@2x.jpg 2x" width="324" height="267">
                 <img class="photo-list__image" src="./img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Фото 4">
@@ -176,7 +188,7 @@
 
     <section class="info-block">
       <div class="info-block__wrapper info-block__wrapper--catalog-videopresentation">
-        <h2 class="info-block__header info-block__header--big info-block__header--mobile font-header font-header__secondary">Все еще сомневаетесь?</h2>
+        <h2 class="info-block__header info-block__header--big info-block__header--mobile font-header font-header--secondary">Все еще сомневаетесь?</h2>
         <p class="info-block__cover info-block__cover--mobile font-paragraph font-paragraph__color-secondary">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
     </section>
@@ -186,6 +198,9 @@
       <div class="videopresentation__wrapper">
         <button class="videopresentation__play-button"><img src="img/video-play.svg" alt="Play"></button>
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop.jpg@2x.webp 2x" width="800" height="500">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.jpg 2x" width="648" height="500">
+          <source type="image/webp" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x" width="280" height="177">
           <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg, img/video-desktop.jpg@2x.jpg 2x" width="800" height="500">
           <source media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet@2x.jpg 2x" width="648" height="500">
           <img class="videopresentation__preview" src="img/video-mobile.jpg" srcset="img/video-mobile.jpg@2x.jpg" width="280" height="177" alt="Фото 4">
@@ -203,7 +218,7 @@
       </div>
       <ul class="main-footer__social social-list">
         <li class="social-list__item">
-          <a class="social-list__link">
+          <a class="social-list__link" href="#">
             <span class="visually-hidden">Вконтакте</span>
             <svg class="social-list__image" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
               <use xlink:href="#icon-wk"></use>

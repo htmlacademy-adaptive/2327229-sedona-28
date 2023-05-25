@@ -69,7 +69,7 @@
   </header>
 
   <main class="main-container">
-    <section class="main-banner main-banner__inner-page">
+    <section class="main-banner main-banner--inner-page">
       <h1 class="visually-hidden">Город Седона</h1>
       <picture>
         <source media="(min-width: 768px)" srcset="img/sedona-desktop.svg" width="480" height="80">
@@ -77,7 +77,7 @@
       </picture>
     </section>
 
-    <section class="info-block info-block__form">
+    <section class="info-block info-block--form">
       <div class="info-block__wrapper info-block__wrapper--review">
         <h2 class="info-block__header info-block__header--review info-block__header--big font-header">Оставьте свой отзыв</h2>
         <p class="info-block__cover info-block__cover--review font-paragraph font-paragraph__color-secondary">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
@@ -87,8 +87,8 @@
     <section class="main-form">
       <h2 class="visually-hidden">Форма отзыва</h2>
       <form class="form-revocation" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form-revocation__wrapper">
-          <fieldset class="form-revocation__item form-revocation__item--represent form-block form-block__represent form-block__bottom form-block__bottom--represent">
+        <div class="form-revocation__wrapper form-revocation__wrapper--represent form-block">
+          <fieldset class="form-revocation__item form-revocation__item--represent form-block__represent form-block__bottom form-block__bottom--represent">
             <legend class="form-block__legend font-header">Представьтесь:</legend>
             <div class="form-block__wrapper">
               <label class="form-block__field-name form-field" for="name">
@@ -218,7 +218,7 @@
       </div>
       <ul class="main-footer__social social-list">
         <li class="social-list__item">
-          <a class="social-list__link">
+          <a class="social-list__link" href="#">
             <span class="visually-hidden">Вконтакте</span>
             <svg class="social-list__image" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
               <use xlink:href="#icon-wk"></use>
@@ -257,7 +257,7 @@
     <div class="modal-error__container">
       <div class="modal-error__background modal-error__window">
         <div class="modal-error__wrapper">
-          <strong class="modal-error__header font-header font-header__error" >Что-то пошло не&nbsp;так!</strong>
+          <strong class="modal-error__header font-header" >Что-то пошло не&nbsp;так!</strong>
           <p class="modal-error__paragraph font-paragraph">Проверьте поля, выделенные красным, скорее всего вы забыли&nbsp;их заполнить</p>
           <button class="modal-error__button-ok">Ок</button>
         </div>

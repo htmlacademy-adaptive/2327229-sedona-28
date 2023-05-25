@@ -1,6 +1,5 @@
 .site-list {
   margin: 0 auto;
-  //margin-top: -100px;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -54,7 +53,7 @@
   padding: 0;
   margin: 0;
   text-align: center;
-  height: 26px;
+  min-height: 26px;
 }
 
 
@@ -76,6 +75,7 @@
     font-style: bold;
     font-weight: 700;
     font-size: 14px;
+    margin-top: 40px;
 
     &:not(:last-child) {
       border-bottom: none;
@@ -86,16 +86,17 @@
     }
 
     &:nth-child(3) {
-      margin-left: 80px;
+      margin-left: 65px;
     }
 
     &:nth-child(2) {
-      margin-right: 80px;
+      margin-right: 100px;
     }
   }
 
   .site-list__link {
     color: #000000;
+    width: 104px;
 
     &--active {
       color: #766357;
@@ -126,6 +127,7 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
+    margin: 0 41px 0 71px;
     margin-top: -100px;
   }
 }

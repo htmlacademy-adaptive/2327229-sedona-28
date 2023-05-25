@@ -1,5 +1,5 @@
 .photo-card,
-.photo-card__premier-desktop {
+.photo-card--premier-desktop {
   position: relative;
 }
 
@@ -44,16 +44,16 @@
     position: relative;
     padding: 0;
     left: -21px;
+
+    &--premier-desktop {
+      position: relative;
+      padding: 0;
+      left: -184px;
+    }
   }
 
   .photo-card__wrapper-name {
     padding: 22px 0 15px;
-  }
-
-  .photo-card__premier-desktop {
-    position: relative;
-    padding: 0;
-    left: -184px;
   }
 
   .photo-card__likes {
@@ -94,12 +94,12 @@
     position: relative;
     padding: 0;
     left: -60px;
-  }
 
-  .photo-card__premier-desktop {
-    position: relative;
-    padding: 0;
-    left: -460px;
+    &--premier-desktop {
+      position: relative;
+      padding: 0;
+      left: -460px;
+    }
   }
 
   .photo-card__name {
@@ -118,13 +118,15 @@
   .photo-card__signature {
     display: flex;
     justify-content: space-between;
+    overflow: auto;
+    max-height: 267px;
 
     &--desktop {
       color: @font-color-secondary;
       background-color: rgba(0, 0, 0, 0.3);
       position: absolute;
       bottom: 0;
-      height: 80px;
+      min-height: 80px;
     }
 
     &--premier {

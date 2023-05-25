@@ -57,6 +57,7 @@
   .card-condition {
     flex-direction: row;
     margin: 60px auto;
+    margin-bottom: 65px;
   }
 
   .card-condition__item {
@@ -66,23 +67,24 @@
 
   .card-condition__text-header {
     flex-direction: column;
+    margin-bottom: 25px;
 
     &--house::before {
       content: url("../img/icon-house.svg");
       margin-right: 0;
-      margin-bottom: 26px;
+      margin-bottom: 20px;
     }
 
     &--food::before {
       content: url("../img/icon-burger.svg");
       margin-right: 0;
-      margin-bottom: 26px;
+      margin-bottom: 20px;
     }
 
     &--souvenirs::before {
       content: url("../img/icon-gift.svg");
       margin-right: 0;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
   }
 
@@ -96,12 +98,22 @@
       margin: 0;
     }
   }
+
+  .card-condition__text-secondary {
+    display: block;
+    padding-top: 5px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .card-condition {
+    margin-bottom: 73px;
+  }
+
   .card-condition__item {
     width: 300px;
     padding: 0 50px;
+    padding-top: 10px;
   }
 
   .card-condition__text-description {
@@ -115,6 +127,18 @@
     &--wrapper {
       display: block;
       margin: 0;
+    }
+  }
+
+  .card-condition__text-secondary {
+    padding-top: 5px;
+  }
+
+  .card-condition__text-header {
+    margin-bottom: 20px;
+
+    &--souvenirs::before {
+      margin-bottom: 20px;
     }
   }
 }

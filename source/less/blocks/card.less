@@ -1,10 +1,10 @@
 .card {
   display: flex;
   flex-direction: column;
-}
 
-.card__reverse {
-  flex-direction: column-reverse;
+  &--reverse {
+    flex-direction: column-reverse;
+  }
 }
 
 .card__image {
@@ -87,7 +87,7 @@
     padding: 0;
 
     &--secondary {
-      margin-bottom: 52px;
+      margin: 41px auto 63px;
     }
   }
 
@@ -105,6 +105,10 @@
     &--wide {
       width: 190px;
     }
+  }
+
+  .card__number-reason {
+    margin-bottom: 27px;
   }
 }
 

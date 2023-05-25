@@ -37,7 +37,13 @@
   color: #000000;
 }
 
+.main-footer__copyright-logo {
+  width: 37px;
+  height: 44px;
+}
+
 .main-footer__copyright-logo path {
+  display: block;
   fill: #000000;
 }
 
@@ -58,18 +64,23 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-footer {
+    padding: 36px auto;
+  }
+
   .main-footer__wrapper {
     flex-direction: row;
+    padding: 36px auto;
   }
 
   .main-footer__logo {
     margin: 0;
-    padding-top: 15px;
+    padding-top: 12px;
   }
 
   .main-footer__copyright {
-    width: 128px;
-    height: 48px;
+    width: 130px;
+    height: 50px;
     display: flex;
     justify-content: end;
     margin: 0;
