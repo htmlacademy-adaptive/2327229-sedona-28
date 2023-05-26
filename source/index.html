@@ -30,7 +30,7 @@
       <a class="main-header__logo">
         <img class="main-header__logo-img" width="185" height="96" src="img/logo.svg" alt="Город Седона">
       </a>
-      <div class="site-list__wrapper site-list__wrapper--open">
+      <div class="main-navigation__wrapper"> <!-- main-navigation__wrapper--close  -  меню закрыто -->
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--active">
@@ -42,7 +42,6 @@
               <p class="site-list__link-text">Фото и видео</p>
             </a>
           </li>
-          <li class="site-list__empty"></li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">
               <p class="site-list__link-text">Форма отзыва</p>
@@ -55,12 +54,12 @@
           </li>
         </ul>
       </div>
-      <button class="main-navigation__toggle-open" id="button-open-menu" type="button" aria-label="Открыть меню">
-        <span class="visually-hidden">Открыть меню</span>
+      <button class="main-navigation__toggle main-navigation__toggle--open main-navigation__toggle--visually-hidden" id="button-open-menu" type="button" aria-label="Открыть/закрыть меню">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
-      <button class="main-navigation__toggle-close main-navigation__toggle-close--none" type="button" aria-label="Закрыть меню">
-        <span class="visually-hidden">Закрыть меню</span>
-      </button>
+      <!-- main-navigation__toggle--visually-hidden   -   скрывает кнопку -->
+      <!-- main-navigation__toggle--open   -   открыть меню (для открытия меню) -->
+      <!-- main-navigation__toggle--close   -   закрыть меню (для закрывания меню) -->
     </nav>
   </header>
 
@@ -74,10 +73,10 @@
       </picture>
     </section>
 
-    <section class="info-block info-block__mark">
+    <section class="info-block info-block--mark">
       <div class="info-block__wrapper info-block__wrapper--slogan">
-        <h2 class="info-block__header font-header font-header__secondary">Седона - небольшой городок&nbsp;в&nbsp;Аризоне, заслуживающий&nbsp;большего!</h2>
-        <p class="info-block__cover font-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <h2 class="info-block__header font-header font-header--secondary">Седона - небольшой городок&nbsp;в&nbsp;Аризоне, заслуживающий&nbsp;большего!</h2>
+        <p class="info-block__cover font-paragraph font-paragraph__color-secondary">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
     </section>
 
@@ -85,7 +84,7 @@
       <h2 class="visually-hidden">Первая причина</h2>
       <div class="card__reason card__reason--accent">
         <div class="card__wrapper card__wrapper--1">
-          <strong class="card__text-header font-header">Настоящий городок</strong>
+          <strong class="card__text-header font-header font-header--desktop">Настоящий городок</strong>
           <p class="card__number-reason font-paragraph">- №1 -</p>
           <p class="card__text-description card__text-description--wide font-paragraph">Седона не атракцион&nbsp;для туристов, там течет своя жизнь</p>
         </div>
@@ -102,21 +101,23 @@
       <h2 class="visually-hidden">Предоставляемые условия</h2>
       <ul class="card-condition">
         <li class="card-condition__item">
-          <strong class="card-condition__text-header card-condition__text-header--house font-header">Жилье</strong>
-          <p class="card-condition__text-description"><span class="card-condition__text-description--wrapper font-paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</span></p>
+          <strong class="card-condition__text-header card-condition__text-header--house font-header font-header--desktop">Жилье</strong>
+          <p class="card-condition__text-description"><span class="card-condition__text-description card-condition__text-description--wrapper font-paragraph font-paragraph__color-secondary">Рекомендуем пожить в настоящем мотеле, все как&nbsp;в кино!</span></p>
         </li>
         <li class="card-condition__item">
-          <strong class="card-condition__text-header card-condition__text-header--food font-header">Еда</strong>
-          <p class="card-condition__text-description"><span class="card-condition__text-description--wrapper font-paragraph">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</span></p>
+          <strong class="card-condition__text-header card-condition__text-header--food font-header font-header--desktop">Еда</strong>
+          <p class="card-condition__text-description"><span class="card-condition__text-description card-condition__text-description--wrapper font-paragraph font-paragraph__color-secondary">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</span></p>
         </li>
         <li class="card-condition__item">
-          <strong class="card-condition__text-header card-condition__text-header--souvenirs font-header">Сувениры</strong>
-          <p class="card-condition__text-description card-condition__text-description--mod"><span class="card-condition__text-description--wrapper font-paragraph">Не только китайского, но&nbsp;и местного производства!</span></p>
+          <strong class="card-condition__text-header card-condition__text-header--souvenirs font-header font-header--desktop">Сувениры</strong>
+          <p class="card-condition__text-description">
+            <span class="card-condition__text-description card-condition__text-description--wrapper font-paragraph font-paragraph__color-secondary">Не только китайского,</span><span class="card-condition__text-secondary font-paragraph font-paragraph__color-secondary">но&nbsp;и местного производства!</span>
+          </p>
         </li>
       </ul>
     </section>
 
-    <section class="card card__reverse">
+    <section class="card card--reverse">
       <h2 class="visually-hidden">Вторая причина</h2>
       <picture>
         <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x" width="461" height="350">
@@ -126,7 +127,7 @@
       </picture>
       <div class="card__reason card__reason--accent">
         <div class="card__wrapper card__wrapper--2">
-          <strong class="card__text-header font-header">Там есть мост&nbsp;дьявола</strong>
+          <strong class="card__text-header font-header font-header--desktop">Там есть мост&nbsp;дьявола</strong>
           <p class="card__number-reason font-paragraph">- №2 -</p>
           <p class="card__text-description card__text-description--mod font-paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
@@ -137,40 +138,39 @@
       <h2 class="visually-hidden">Третья, четвертая и пятая причины</h2>
       <div class="card__reason">
         <div class="card__wrapper card__wrapper--border-bottom card__wrapper--secondary">
-          <strong class="card__text-header font-header">Небольшая площадь</strong>
-          <p class="card__number-reason font-paragraph">- №3 -</p>
-          <p class="card__text-description card__text-description--desktop font-paragraph">Все интересные места находятся очень близко</p>
+          <strong class="card__text-header font-header font-header--desktop">Небольшая площадь</strong>
+          <p class="card__number-reason font-paragraph font-paragraph__color-secondary">- №3 -</p>
+          <p class="card__text-description card__text-description--desktop font-paragraph font-paragraph__color-secondary">Все интересные места находятся очень близко</p>
         </div>
       </div>
       <div class="card__reason">
         <div class="card__wrapper card__wrapper--border-bottom card__wrapper--secondary">
-          <strong class="card__text-header font-header">Красивая дорога</strong>
-          <p class="card__number-reason font-paragraph">- №4 -</p>
-          <p class="card__text-description card__text-description--desktop card__text-description--mod font-paragraph">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
+          <strong class="card__text-header font-header font-header--desktop">Красивая дорога</strong>
+          <p class="card__number-reason font-paragraph font-paragraph__color-secondary">- №4 -</p>
+          <p class="card__text-description card__text-description--desktop card__text-description--mod font-paragraph font-paragraph__color-secondary">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
         </div>
       </div>
       <div class="card__reason">
         <div class="card__wrapper card__wrapper--secondary">
-          <strong class="card__text-header font-header">Мало туристов</strong>
-          <p class="card__number-reason font-paragraph">- №5 -</p>
-          <p class="card__text-description card__text-description--desktop card__text-description--mod card__text-description--wide font-paragraph">Большинство едет в Гранд Каньон и толпится там</p>
+          <strong class="card__text-header font-header font-header--desktop">Мало туристов</strong>
+          <p class="card__number-reason font-paragraph font-paragraph__color-secondary">- №5 -</p>
+          <p class="card__text-description card__text-description--desktop card__text-description--mod card__text-description--wide font-paragraph font-paragraph__color-secondary">Большинство едет в Гранд Каньон и толпится там</p>
         </div>
       </div>
     </section>
 
     <section class="info-block">
       <div class="info-block__wrapper info-block__wrapper--interesting">
-        <h2 class="info-block__header info-block__header--medium info-block__header--big font-header">Заинтересовались?</h2>
-      <p class="info-block__cover font-paragraph">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
+        <h2 class="info-block__header info-block__header--interesting info-block__header--medium info-block__header--big font-header">Заинтересовались?</h2>
+        <p class="info-block__cover font-paragraph font-paragraph__color-secondary">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения&nbsp;гостиниц&nbsp;в&nbsp;Седоне</p>
       </div>
-      <a class="info-block__button-search">
-        <span class="font-header info-block__button-text">Найти гостиницу</span>
+      <a class="info-block__button-search" href="#">
+        <span class="font-header font-header--secondary info-block__button-text">Найти гостиницу</span>
       </a>
     </section>
 
     <section class="map">
       <h2 class="visually-hidden">Карта местоположения</h2>
-      <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2186216.1616908046!2d-113.55746802903579!3d35.230925644754706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1684663116974!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
   </main>
@@ -178,11 +178,11 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__logo">
-        <img src="img/visitsedona.svg" width="136" height="26" alt="VISITSEDONA">
+        <span class="main-footer__visit">#visitSEDONA</span>
       </div>
       <ul class="main-footer__social social-list">
         <li class="social-list__item">
-          <a class="social-list__link">
+          <a class="social-list__link" href="#">
             <span class="visually-hidden">Вконтакте</span>
             <svg class="social-list__image" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
               <use xlink:href="#icon-wk"></use>
@@ -206,9 +206,10 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-labelledby="site-html">
+        <title id="site-html">Сайт HTML Academy</title>
         <span class="main-footer__copyright-text font-paragraph">Разработано</span>
-        <svg class="main-footer__copyright-logo" width="37" height="44" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false">
+        <svg class="main-footer__copyright-logo" width="37" height="44" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" focusable="false">
           <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
         </svg>
       </a>

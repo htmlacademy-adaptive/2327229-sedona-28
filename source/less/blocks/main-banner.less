@@ -1,4 +1,5 @@
 .main-banner {
+  background-color: #b2d4ea;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -6,15 +7,15 @@
 
   padding: 90px 0 85px;
 
+  &--inner-page {
+    height: 158px;
+    padding: 0;
+    background-position: 100% 100%;
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
   }
-}
-
-.main-banner__inner-page {
-  height: 158px;
-  padding: 0;
-  background-position: 100% 100%;
 }
 
 .main-banner__title {
@@ -35,15 +36,15 @@
     background-image: url("../img/back-desktop.jpg");
     background-position: 100% 100%;
 
+    &--inner-page {
+      height: 290px;
+      padding: 0;
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
       background-size: cover;
     }
-  }
-
-  .main-banner__inner-page {
-    height: 290px;
-    padding: 0;
   }
 
   .main-banner__title {
@@ -57,11 +58,11 @@
   .main-banner {
     padding-top: 78px;
     background-image: url("../img/back-desktop.jpg");
-  }
 
-  .main-banner__inner-page {
-    height: 301px;
-    padding: 0;
+    &--inner-page {
+      height: 301px;
+      padding: 0;
+    }
   }
 
   .main-banner__title {

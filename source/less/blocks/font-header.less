@@ -1,0 +1,18 @@
+.font-header {
+  font-family: @main-font;
+  font-style: bold;
+  font-weight: 700;
+  font-size: @font-size-header-mobile;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--secondary {
+    font-size: @main-font-size-header;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .font-header--desktop {
+    font-size: @main-font-size-header;
+  }
+}

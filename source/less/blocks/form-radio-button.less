@@ -33,3 +33,19 @@
   border-radius: 50%;
   content: "";
 }
+
+.form-radio-button:hover .form-radio-button__mark {
+  background-color: #e5e5e5;
+}
+
+.form-radio-button:active .form-radio-button__mark {
+  background-color: #d5d5d5;
+}
+
+.form-radio-button:active .form-radio-button__mark::after {
+  opacity: 30%;
+}
+
+.form-radio-button__item:focus + .form-radio-button__mark {
+  outline: 2px solid #000000;
+}
