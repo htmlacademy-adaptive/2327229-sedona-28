@@ -4,6 +4,7 @@
   padding: 0;
   list-style-type: none;
   width: 156px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
@@ -12,6 +13,10 @@
   background-color: @background-block-color;
   width: 48px;
   height: 48px;
+}
+
+.social-list__item:nth-child(3n) {
+  margin-bottom: 6px;
 }
 
 .social-list__item:hover {

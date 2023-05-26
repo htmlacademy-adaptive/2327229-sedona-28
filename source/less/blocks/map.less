@@ -1,12 +1,35 @@
 .map {
   height: 350px;
-  width: 100%;
-  position: relative;
+  background-image: url("../img/map-mobile.jpg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
-.map__google {
-  display: block;
-  border: none;
-  width: 100%;
-  height: 350px;
+.map::before {
+  content: url("../img/map-marker.svg");
+  position: relative;
+  top: 161px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    background-image: url("../img/map-tablet.jpg.jpg");
+  }
+
+  .map::before {
+    top: 164px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    background-image: url("../img/map-desktop.jpg.jpg");
+  }
+
+  .map::before {
+    top: 162px;
+  }
 }
