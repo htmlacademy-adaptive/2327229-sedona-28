@@ -1,0 +1,40 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field__label {
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: 16px;
+}
+
+.form-field__icon {
+  display: block;
+  width: 58px;
+  height: 58px;
+  padding: 0;
+  border: none;
+  background-color: hsl(0, 0%, 90%);
+
+  &--phone::before {
+    content: url("../img/phone.svg");
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  &--mail::before {
+    content: url("../img/mail.svg");
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}

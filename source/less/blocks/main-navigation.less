@@ -1,0 +1,73 @@
+.main-navigation {
+  height: 56px;
+  position: relative;
+}
+
+.main-navigation__list {
+  width: 100%;
+  position: relative;
+  top: 40px;
+}
+
+.main-navigation__toggle-open {
+  background-image: url("../img/icon-menu.svg");
+  width: 23px;
+  height: 23px;
+  border: none;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.main-navigation__toggle-open:hover {
+  opacity: 60%;
+}
+
+.main-navigation__toggle-open:active {
+  opacity: 30%;
+}
+
+.main-navigation__toggle-close {
+  background-image: url("../img/icon-cross.svg");
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 3;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+
+  &--none {
+    display: none;
+  }
+}
+
+.main-navigation__toggle-close:hover {
+  opacity: 60%;
+}
+
+.main-navigation__toggle-close:active {
+  opacity: 30%;
+}
+
+@media (min-width: @tablet-width) {
+  .main-navigation__list {
+    width: 690px;
+    margin: 0 auto;
+  }
+
+  .main-navigation__toggle-open {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-navigation__list {
+    width: 1038px;
+    margin: 0 auto;
+  }
+}

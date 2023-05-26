@@ -1,0 +1,35 @@
+.form-radio-button {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-left: 62px;
+}
+
+.form-radio-button__label {
+  font-family: @main-font;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.form-radio-button__mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: -10px;
+  left: -62px;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.form-radio-button__item[type="radio"]:checked + .form-radio-button__mark::after {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  content: "";
+}

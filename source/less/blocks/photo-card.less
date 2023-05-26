@@ -1,0 +1,135 @@
+.photo-card,
+.photo-card__premier-desktop {
+  position: relative;
+}
+
+.photo-card__image {
+  display: block;
+}
+
+.photo-card__wrapper-name {
+  padding: 15px 0 11px;
+}
+
+.photo-card__name,
+.photo-card__likes {
+  font-family: @main-font;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 100%;
+
+  &--desktop {
+    padding: 32px 20px 27px 0;
+  }
+}
+
+.photo-card__likes::before {
+  content: url("../img/like-icon.svg.svg");
+  margin-right: 14px;
+  position: relative;
+  top: 2px;
+}
+
+.photo-card__author-key,
+.photo-card__author-value {
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 100%;
+}
+
+
+@media (min-width: @tablet-width) {
+  .photo-card {
+    position: relative;
+    padding: 0;
+    left: -21px;
+  }
+
+  .photo-card__wrapper-name {
+    padding: 22px 0 15px;
+  }
+
+  .photo-card__premier-desktop {
+    position: relative;
+    padding: 0;
+    left: -184px;
+  }
+
+  .photo-card__likes {
+    padding: 28px 0 31px;
+  }
+
+  .photo-card__likes::before {
+    margin-right: 9px;
+  }
+
+  .photo-card__signature {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 80px;
+
+    &--premier {
+      width: 608px;
+    }
+
+    &--second {
+      width: 284px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-card {
+    position: relative;
+    padding: 0;
+    left: -60px;
+  }
+
+  .photo-card__premier-desktop {
+    position: relative;
+    padding: 0;
+    left: -460px;
+  }
+
+  .photo-card__name {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .photo-card__likes::before {
+    content: url("../img/like-icon-desktop.svg");
+  }
+
+  .photo-card__signature {
+    display: flex;
+    justify-content: space-between;
+
+    &--desktop {
+      color: @font-color-secondary;
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      bottom: 0;
+      height: 80px;
+    }
+
+    &--premier {
+      width: 1161px;
+    }
+
+    &--second {
+      width: 361px;
+    }
+  }
+
+  .photo-card__wrapper-name {
+    &--desktop {
+      padding: 17px 0 17px 5px;
+    }
+  }
+}
