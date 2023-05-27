@@ -19,7 +19,7 @@
 @media (min-width: @tablet-width) {
   .impression-list {
     flex-direction: row;
-    width: 576px;
+    width: 615px;
     flex-wrap: wrap;
     margin-bottom: 48px;
   }
@@ -28,11 +28,20 @@
     &:not(:last-child) {
       margin-bottom: 26px;
     }
+
+    &:nth-child(2n+1) {
+      margin-right: 0;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .impression-list {
     width: 854px;
+    margin-bottom: 40px;
+  }
+
+  .impression-list__item:nth-child(1) {
+    margin-right: -10px;
   }
 }

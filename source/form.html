@@ -46,7 +46,6 @@
               <p class="site-list__link-text">Фото и видео</p>
             </a>
           </li>
-          <li class="site-list__empty"></li>
           <li class="site-list__item">
             <a class="site-list__link site-list__link--active">
               <p class="site-list__link-text">Форма отзыва</p>
@@ -72,7 +71,8 @@
     <section class="main-banner main-banner--inner-page">
       <h1 class="visually-hidden">Город Седона</h1>
       <picture>
-        <source media="(min-width: 768px)" srcset="img/sedona-desktop.svg" width="480" height="80">
+        <source media="(min-width: 1200px)" srcset="./img/SEDONA-decktop.svg" width="460" height="80">
+        <source media="(min-width: 768px)" srcset="img/sedona-desktop.svg" width="460" height="80">
         <img class="main-banner__title main-banner__title--secondary" src="img/sedona-mobile.svg" width="290" height="50" alt="Седона">
       </picture>
     </section>
@@ -80,16 +80,16 @@
     <section class="info-block info-block--form">
       <div class="info-block__wrapper info-block__wrapper--review">
         <h2 class="info-block__header info-block__header--review info-block__header--big font-header">Оставьте свой отзыв</h2>
-        <p class="info-block__cover info-block__cover--review font-paragraph font-paragraph__color-secondary">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
+        <p class="info-block__cover info-block__cover--review font-paragraph font-paragraph--color-secondary">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
       </div>
     </section>
 
     <section class="main-form">
       <h2 class="visually-hidden">Форма отзыва</h2>
-      <form class="form-revocation" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form-revocation__wrapper form-revocation__wrapper--represent form-block">
+      <form class="form-revocation form-block" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form-revocation__wrapper form-revocation__wrapper--represent">
           <fieldset class="form-revocation__item form-revocation__item--represent form-block__represent form-block__bottom form-block__bottom--represent">
-            <legend class="form-block__legend font-header">Представьтесь:</legend>
+            <legend class="form-block__legend form-block__legend--represent font-header">Представьтесь:</legend>
             <div class="form-block__wrapper">
               <label class="form-block__field-name form-field" for="name">
                 <span class="form-field__label">Имя*:</span>
@@ -107,7 +107,7 @@
           </fieldset>
         </div>
 
-        <fieldset class="form-revocation__item form-revocation__item--contact form-block form-block__bottom form-block__bottom--contact">
+        <fieldset class="form-revocation__item form-revocation__item--contact form-block__bottom form-block__bottom--contact">
           <legend class="form-block__legend form-block__legend--contact font-header">Контактная информация:</legend>
           <div class="form-block__wrapper">
             <label class="form-block__field-name form-field" for="tel">
@@ -131,7 +131,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-revocation__item form-revocation__item--individual form-block form-block__bottom form-block__bottom--impression">
+        <fieldset class="form-revocation__item form-revocation__item--individual form-block__bottom form-block__bottom--impression">
           <legend class="form-block__legend form-block__legend--impression font-header">Ваше общее впечатление:</legend>
           <ul class="impression-list">
             <li class="impression-list__item">
@@ -158,7 +158,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form-revocation__item form-revocation__item--individual form-block form-block__bottom form-block__bottom--visit">
+        <fieldset class="form-revocation__item form-revocation__item--individual form-block__bottom form-block__bottom--visit">
           <legend class="form-block__legend form-block__legend--visit font-header">Посещенные<br> достопримечательности:</legend>
           <ul class="attractions-list">
             <li class="attractions-list__item">
@@ -192,15 +192,15 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form-revocation__item form-revocation__item--individual form-block form-block__bottom form-block__bottom--emotions">
+        <fieldset class="form-revocation__item form-revocation__item--individual form-block__bottom form-block__bottom--emotions">
           <legend class="form-block__legend form-block__legend--emotions font-header">Опишите свои эмоции:</legend>
           <label class="visually-hidden" for="emotions">Опишите эмоции</label>
 
           <div class="form-revocation__wrapper-textarea">
             <textarea class="form-block__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
               <div class="form-revocation__wrapper-button">
-                <input class="form-revocation__button font-header" type="submit" value="Отправить отзыв">
-                <p class="form-revocation__mark font-paragraph">*-обязательные поля</p>
+                <input class="form-revocation__button font-header font-header--secondary" type="submit" value="Отправить отзыв">
+                <p class="form-revocation__mark font-paragraph">*&nbsp;&nbsp;-&nbsp;&nbsp;обязательные поля</p>
               </div>
           </div>
 
@@ -242,8 +242,8 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-labelledby="site-html">
-        <title id="site-html">Сайт HTML Academy</title>
+      <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">Сайт HTML Academy</span>
         <span class="main-footer__copyright-text font-paragraph">Разработано</span>
         <svg class="main-footer__copyright-logo" width="37" height="44" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false">
           <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>

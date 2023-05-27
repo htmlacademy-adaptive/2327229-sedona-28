@@ -107,7 +107,7 @@
 
 @media (min-width: @desktop-width) {
   .card-condition {
-    margin-bottom: 73px;
+    margin-bottom: 67px;
   }
 
   .card-condition__item {
@@ -135,10 +135,21 @@
   }
 
   .card-condition__text-header {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+
+    &--house::before {
+      content: url("../img/icon-house-desktop.svg");
+      margin-bottom: 20px;
+    }
+
+    &--food::before {
+      content: url("../img/icon-burger-desktop.svg");
+      margin-bottom: 20px;
+    }
 
     &--souvenirs::before {
-      margin-bottom: 20px;
+      content: url("../img/icon-gift-desktop.svg");
+      margin-bottom: 18px;
     }
   }
 }
