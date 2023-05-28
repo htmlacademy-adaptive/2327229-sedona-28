@@ -5,12 +5,24 @@
   font-size: @main-font-size-paragraph;
   text-transform: uppercase;
   text-align: center;
+
+  &--footnote {
+    font-size: 12px;
+  }
 }
 
-.font-paragraph__color-secondary {
+.font-paragraph--color-secondary {
   color: #333333;
 }
 
 .font-paragraph__secondary {
   font-size: @font-size-paragraph-mobile;
+}
+
+@media (min-width: @tablet-width) {
+  .font-paragraph {
+    &--footnote {
+      font-size: 14px;
+    }
+  }
 }
