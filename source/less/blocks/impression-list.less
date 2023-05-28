@@ -12,14 +12,15 @@
 
 .impression-list__item {
   &:not(:last-child) {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .impression-list {
     flex-direction: row;
-    width: 615px;
+    width: 574px;
+    margin: 0 auto;
     flex-wrap: wrap;
     margin-bottom: 48px;
   }
@@ -32,6 +33,10 @@
     &:nth-child(2n+1) {
       margin-right: 0;
     }
+
+    &:nth-child(2n) {
+      margin-right: 45px;
+    }
   }
 }
 
@@ -42,6 +47,6 @@
   }
 
   .impression-list__item:nth-child(1) {
-    margin-right: -10px;
+    margin-right: 30px;
   }
 }

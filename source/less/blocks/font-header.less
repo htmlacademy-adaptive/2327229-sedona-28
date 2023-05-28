@@ -6,13 +6,19 @@
   text-transform: uppercase;
   text-align: center;
 
-  &--secondary {
+  &--search {
     font-size: @main-font-size-header;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .font-header--desktop {
-    font-size: @main-font-size-header;
+  .font-header {
+    &--desktop {
+      font-size: @main-font-size-header;
+    }
+
+    &--secondary {
+      font-size: @main-font-size-header;
+    }
   }
 }

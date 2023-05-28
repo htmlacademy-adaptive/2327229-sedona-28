@@ -5,6 +5,7 @@
 .videopresentation__preview {
   display: block;
   margin: 0 auto;
+  margin-bottom: -7px;
 }
 
 .videopresentation__wrapper {
@@ -13,14 +14,14 @@
 }
 
 .videopresentation__play-button {
-  background-image: url("../../img/video-play.svg");
+  background-image: url("../img/video-play.svg");
   width: 48px;
   height: 54px;
   padding: 0;
   display: block;
   position: absolute;
   top: 61px;
-  left: 45.5%;
+  left: 42%;
   margin: 0 auto;
   background-color: transparent;
   border: none;
@@ -28,8 +29,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  .videopresentation {
+    margin-bottom: 60px;
+  }
+
   .videopresentation__play-button {
     top: 222px;
+    left: 47%;
   }
 
   .videopresentation__wrapper {
